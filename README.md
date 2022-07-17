@@ -18,18 +18,20 @@ Unity 프로젝트 기획서는 아래와 같은 양식으로
    처음에 콜오브 듀티 월드워2라는 게임을 접하고 대공포로 적 전투기를 격추시키는 미션을 플레이하면서 정말 재미있게 플레이했던 기억이 있는데 대공포만 따로 빼서, 다양한 아이템들을 넣어서 캐쥬얼식으로 게임을 제작하면 중독성 넘치게 제작할 수 있을것 같아서 기획하게 되었다. 
    
 - __게임 조작법__  
- <PC>  
- 마우스 : 상, 하, 좌, 우 화면 움직임(기존 FPS게임과 동일)
- 마우스 왼쪽 클릭 : 총알 발사
+ 
+   <PC>  
+      마우스 : 상, 하, 좌, 우 화면 움직임(기존 FPS게임과 동일)
+      마우스 왼쪽 클릭 : 총알 발사
   
- <모바일>  
- 조그 다이얼 : 상, 하, 좌, 우 화면 움직임
+   <모바일>  
+      조그 다이얼 : 상, 하, 좌, 우 화면 움직임
    
-찾아 본 게임  
-- Ex) [Anti-AirCraft][(https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)](https://play.google.com/store/apps/details?id=com.cirepa.AntiAirCraft2)을 모작했습니다.
 
-그 외 비슷한 방식의 게임.
-- Ex) [콜오브 듀티 월드워2][(https://youtu.be/N_wM0Rm1eik?t=85)]
+
+ - 그 외 비슷한 방식의 게임.  
+   Ex) [Anti-AirCraft][(https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)]
+      
+   Ex) [콜오브 듀티 월드워2][(https://youtu.be/N_wM0Rm1eik?t=85)]
 
 ## 개발 환경
 프로젝트가 완료된 후 개발 환경을 작성합니다. 기간 / 인원 / 사용한 툴 / 외부 패키지, 라이브러리 등을 작성합니다.
