@@ -29,7 +29,7 @@ Unity 프로젝트 기획서는 아래와 같은 양식으로
 
 
  - 그 외 비슷한 방식의 게임.  
-   Ex) [Anti-AirCraft][(https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)]
+   Ex) [Anti-AirCraft][(https://play.google.com/store/apps/details?id=com.cirepa.AntiAirCraft2)]
       
    Ex) [콜오브 듀티 월드워2][(https://youtu.be/N_wM0Rm1eik?t=85)]
 
