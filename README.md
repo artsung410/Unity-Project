@@ -29,9 +29,9 @@ Unity 프로젝트 기획서는 아래와 같은 양식으로
 
 
  - 그 외 비슷한 방식의 게임.  
-   Ex) [Anti-AirCraft][(https://play.google.com/store/apps/details?id=com.cirepa.AntiAirCraft2)]
+   Ex) [Anti-AirCraft](https://play.google.com/store/apps/details?id=com.cirepa.AntiAirCraft2)
       
-   Ex) [콜오브 듀티 월드워2][(https://youtu.be/N_wM0Rm1eik?t=85)]
+   Ex) [콜오브 듀티 월드워2](https://youtu.be/N_wM0Rm1eik?t=85)
 
 ## 개발 환경
 프로젝트가 완료된 후 개발 환경을 작성합니다. 기간 / 인원 / 사용한 툴 / 외부 패키지, 라이브러리 등을 작성합니다.
