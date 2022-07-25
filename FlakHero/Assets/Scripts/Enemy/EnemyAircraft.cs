@@ -25,6 +25,8 @@ public abstract class EnemyAircraft : MonoBehaviour
     protected float explosionForce = 1000.0f;
 
     protected bool isExplode = false;
+
+
     // 추상메소드
     public void TakeDamage(int damage)
     {

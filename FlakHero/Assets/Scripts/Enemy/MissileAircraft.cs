@@ -14,14 +14,23 @@ public class MissileAircraft : EnemyAircraft
     [SerializeField]
     private GameObject target; // 플레이어 게임오브젝트 가져오기
 
+    [SerializeField]
+    private GameObject MissilePrefab; // 미사일 프리팹 가져오기
+
+    [SerializeField]
+    private Transform MissileSpawnPoint; // 미사일 프리팹 가져오기
+
     public bool IsRreadyToLaunchMissile; // 미사일 발사 준비 여부
+    public bool IsMissileLunched;
 
     private void Awake()
     {
         currentHP = maxHP; // 현재 체력 = 최대체력으로 초기화
         destoryDirection = new Vector3(transform.position.x, transform.position.y, -transform.position.z);
         IsRreadyToLaunchMissile = false;
+        IsMissileLunched = false;
     }
+
     private void Update()
     {
         MoveAndFireMissile();
@@ -37,10 +46,19 @@ public class MissileAircraft : EnemyAircraft
             transform.rotation = Quaternion.LookRotation(to - from);
             transform.Translate(Vector3.forward * Time.deltaTime * flightSpeed);
         }
+
         else
         {
+            StartCoroutine("ExplodeAircraft");
+
             transform.rotation = Quaternion.LookRotation(destoryDirection * 2 - from);
             transform.Translate(Vector3.forward * Time.deltaTime * flightSpeed * 2);
+
+            if (IsMissileLunched == false)
+            {
+                Instantiate(MissilePrefab, MissileSpawnPoint.position, MissileSpawnPoint.rotation);
+                IsMissileLunched = true;
+            }
         }
     }
 

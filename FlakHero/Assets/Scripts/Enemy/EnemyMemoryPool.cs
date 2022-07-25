@@ -13,7 +13,7 @@ public class EnemyMemoryPool : MonoBehaviour
     private GameObject enemyPrefab;             // 생성되는 적 프리팹
 
     [SerializeField]
-    private float enemySpawnTime = 3;           // 적 생성 주기
+    private float enemySpawnTime = 2;           // 적 생성 주기
 
     [SerializeField]
     private float enemySpawnLatency = 1;        // 타일 생성 후 적이 등장하기까지 대기시간
@@ -31,7 +31,6 @@ public class EnemyMemoryPool : MonoBehaviour
 
         StartCoroutine("SpawnTile");
     }
-
 
     // 맵 내부 임의의 위치에 적 등장을 알리는 빨간 기둥을 생성한다.
 
@@ -58,7 +57,6 @@ public class EnemyMemoryPool : MonoBehaviour
                 else
                 {
                     item.transform.position = new Vector3(randomX, 40, randomZ);
-
 
                     // 일정 시간 후에 기둥위치에서 적이 생성되도록 메서드를 호출한다.
                     StartCoroutine("SpawnEnemy", item);

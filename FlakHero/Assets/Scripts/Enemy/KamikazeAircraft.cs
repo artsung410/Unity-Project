@@ -14,7 +14,6 @@ public class KamikazeAircraft : EnemyAircraft
 
     public bool IsSreachedPlayer; // 플레이어와 접촉 여부
 
-
     private void Awake()
     {
         currentHP = maxHP; // 현재 체력 = 최대체력으로 초기화

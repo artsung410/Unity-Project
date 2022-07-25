@@ -82,10 +82,10 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 0
   explosionPrefab: {fileID: 6883561620270123213, guid: 7d4ea6824b17d02408362c052d85a698, type: 3}
-  explosionDelayTime: 0.3
+  explosionDelayTime: 0
   explosionRadius: 10
   explosionForce: 1000
-  flightSpeed: 10
+  flightSpeed: 20
   target: {fileID: 3758940503040244950, guid: 84958f86a861a7e43a610b3de8fee699, type: 3}
   IsSreachedPlayer: 0
 --- !u!23 &8065788375321193289

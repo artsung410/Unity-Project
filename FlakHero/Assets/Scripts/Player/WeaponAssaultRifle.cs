@@ -9,7 +9,6 @@ public class AmmoEvent : UnityEngine.Events.UnityEvent<int, int> { }
 [System.Serializable]
 public class MagazineEvent : UnityEngine.Events.UnityEvent<int> { }
 
-
 public class WeaponAssaultRifle : MonoBehaviour
 {
     // �ءءءءءءءءءءءءءءءءءءءء� Event Instance �ءءءءءءءءءءءءءءءءءءءء�
