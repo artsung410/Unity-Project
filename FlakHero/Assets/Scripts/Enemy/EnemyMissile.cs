@@ -19,6 +19,9 @@ public class EnemyMissile : MonoBehaviour
     protected float explosionDelayTime = 0.1f;
 
     [SerializeField]
+    protected float searchTime = 2f;
+
+    [SerializeField]
     protected float explosionRadius = 10.0f;
 
     [SerializeField]
@@ -26,6 +29,7 @@ public class EnemyMissile : MonoBehaviour
 
     public bool IsSreachedPlayer; // 플레이어와 접촉 여부
 
+    private float elapsedTime;
     private void Awake()
     {
         IsSreachedPlayer = false;
@@ -43,8 +47,17 @@ public class EnemyMissile : MonoBehaviour
 
         if (IsSreachedPlayer == false)
         {
+            // 플레이어가 회피했을때 자동으로 폭발하도록 처리
+            
+            StartCoroutine("NotFoundTarget");
+
             transform.rotation = Quaternion.LookRotation(to - from);
             transform.Translate(Vector3.forward * Time.deltaTime * flightSpeed);
+
+            if (gameObject == null)
+            {
+                StopCoroutine("NotFoundTarget");
+            }
         }
 
         else
@@ -85,5 +98,19 @@ public class EnemyMissile : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    private IEnumerator NotFoundTarget()
+    {
+        yield return new WaitForSeconds(searchTime);
+
+        // 폭발 이펙트 생성
+        Bounds bounds = GetComponent<Collider>().bounds;
+        Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
+
+        if (gameObject != null)
+        {
+            Destroy(gameObject);
+        }
     }
 }

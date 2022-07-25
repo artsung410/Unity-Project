@@ -49,16 +49,19 @@ public class MissileAircraft : EnemyAircraft
 
         else
         {
-            StartCoroutine("ExplodeAircraft");
+            //StartCoroutine("ExplodeAircraft");
 
             transform.rotation = Quaternion.LookRotation(destoryDirection * 2 - from);
             transform.Translate(Vector3.forward * Time.deltaTime * flightSpeed * 2);
 
             if (IsMissileLunched == false)
             {
-                Instantiate(MissilePrefab, MissileSpawnPoint.position, MissileSpawnPoint.rotation);
+                GameObject misslie = Instantiate(MissilePrefab, MissileSpawnPoint.position, MissileSpawnPoint.rotation);
+                misslie.SetActive(true);
                 IsMissileLunched = true;
             }
+
+            Destroy(gameObject, 2f);
         }
     }
 
