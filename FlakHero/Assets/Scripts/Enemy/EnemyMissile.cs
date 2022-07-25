@@ -49,7 +49,7 @@ public class EnemyMissile : MonoBehaviour
 
         else
         {
-            StartCoroutine("ExplodeAircraft");
+            StartCoroutine("ExplodeMissile");
         }
     }
 
@@ -63,7 +63,7 @@ public class EnemyMissile : MonoBehaviour
         }
     }
 
-    private IEnumerator ExplodeAircraft()
+    private IEnumerator ExplodeMissile()
     {
         yield return new WaitForSeconds(explosionDelayTime);
 

@@ -19,6 +19,7 @@ public class KamikazeAircraft : EnemyAircraft
         currentHP = maxHP; // 현재 체력 = 최대체력으로 초기화
         IsSreachedPlayer = false; 
     }
+
     private void Update()
     {
         MoveAndSelfDestruct();
