@@ -16,6 +16,9 @@ public class EnemyMemoryPool : MonoBehaviour
     private GameObject enemyPrefabB;             // 생성되는 적 프리팹
 
     [SerializeField]
+    private GameObject enemyMissilePrefab;            // 생성되는 미사일 프리팹
+
+    [SerializeField]
     private float enemySpawnTime = 2;           // 적 생성 주기
 
     [SerializeField]
@@ -25,6 +28,9 @@ public class EnemyMemoryPool : MonoBehaviour
     private MemoryPool enemyMemoryPoolA;         // 카미카제 비행기 활성 / 비활성 관리
     private MemoryPool enemyMemoryPoolB;         // 미사일 폭격기 활성 / 비활성 관리
 
+    [HideInInspector]
+    public MemoryPool enemyMissile;         // 미사일  / 비활성 관리
+
     private int numberOfEnemiesSpawnedAtOnce = 1; // 동시에 생성되는 적의 숫자
     private Vector2Int mapSize = new Vector2Int(100, 100); // 맵 크기
 
@@ -33,6 +39,7 @@ public class EnemyMemoryPool : MonoBehaviour
         spawnPointMemoryPool = new MemoryPool(enemySpawnPointPrefab);
         enemyMemoryPoolA = new MemoryPool(enemyPrefabA);
         enemyMemoryPoolB = new MemoryPool(enemyPrefabB);
+        enemyMissile = new MemoryPool(enemyMissilePrefab);
 
         StartCoroutine("SpawnTile");
     }
@@ -66,11 +73,11 @@ public class EnemyMemoryPool : MonoBehaviour
                     // 일정 시간 후에 기둥위치에서 적이 생성되도록 메서드를 호출한다.
                     if ((int)randomX % 2 == 0)
                     {
-                        StartCoroutine("SpawnEnemyA", item);
+                        StartCoroutine(SpawnEnemy(item, enemyMemoryPoolA));
                     }
                     else
                     {
-                        StartCoroutine("SpawnEnemyB", item);
+                        StartCoroutine(SpawnEnemy(item, enemyMemoryPoolB));
                     }
                 }
             }
@@ -87,12 +94,12 @@ public class EnemyMemoryPool : MonoBehaviour
         }
     }
 
-    private IEnumerator SpawnEnemyA(GameObject point)
+    private IEnumerator SpawnEnemy(GameObject point, MemoryPool eMP)
     {
         yield return new WaitForSeconds(enemySpawnLatency);
 
         // 적 오브젝트를 생성하고, 적의 위치를 point의 위치로 설정
-        GameObject item = enemyMemoryPoolA.ActivatePoolItem();
+        GameObject item = eMP.ActivatePoolItem();
         item.transform.position = point.transform.position;
 
         //item.GetComponent<EnemyFSM>().Setup(target, this);
@@ -101,26 +108,9 @@ public class EnemyMemoryPool : MonoBehaviour
         spawnPointMemoryPool.DeactivatePoolItem(point);
     }
 
-    public void DeactivateEnemyA(GameObject enemy)
+    public void DeactivateEnemy(GameObject enemy, MemoryPool eMP)
     {
-        enemyMemoryPoolA.DeactivatePoolItem(enemy);
-    }
-
-    private IEnumerator SpawnEnemyB(GameObject point)
-    {
-        yield return new WaitForSeconds(enemySpawnLatency);
-
-        // 적 오브젝트를 생성하고, 적의 위치를 point의 위치로 설정
-        GameObject item = enemyMemoryPoolB.ActivatePoolItem();
-        item.transform.position = point.transform.position;
-
-        // 타일 오브젝트를 비활성화
-        spawnPointMemoryPool.DeactivatePoolItem(point);
-    }
-
-    public void DeactivateEnemyB(GameObject enemy)
-    {
-        enemyMemoryPoolB.DeactivatePoolItem(enemy);
+        eMP.DeactivatePoolItem(enemy);
     }
 
 }

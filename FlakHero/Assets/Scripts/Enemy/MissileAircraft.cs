@@ -22,6 +22,7 @@ public class MissileAircraft : EnemyAircraft
 
     public bool IsRreadyToLaunchMissile; // 미사일 발사 준비 여부
     public bool IsMissileLunched;
+    public float survivalTime = 2f;
 
     private void Awake()
     {
@@ -49,8 +50,6 @@ public class MissileAircraft : EnemyAircraft
 
         else
         {
-            //StartCoroutine("ExplodeAircraft");
-
             transform.rotation = Quaternion.LookRotation(destoryDirection * 2 - from);
             transform.Translate(Vector3.forward * Time.deltaTime * flightSpeed * 2);
 
@@ -61,8 +60,15 @@ public class MissileAircraft : EnemyAircraft
                 IsMissileLunched = true;
             }
 
-            Destroy(gameObject, 2f);
+            StartCoroutine("DeactiveSelf");
         }
+    }
+
+    private IEnumerator DeactiveSelf()
+    {
+        yield return new WaitForSeconds(survivalTime);
+
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)

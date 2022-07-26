@@ -26,7 +26,6 @@ public abstract class EnemyAircraft : MonoBehaviour
 
     protected bool isExplode = false;
 
-
     // 추상메소드
     public void TakeDamage(int damage)
     {
@@ -62,6 +61,6 @@ public abstract class EnemyAircraft : MonoBehaviour
             }
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

@@ -97,7 +97,7 @@ public class EnemyMissile : MonoBehaviour
             }
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     private IEnumerator NotFoundTarget()
@@ -110,7 +110,7 @@ public class EnemyMissile : MonoBehaviour
 
         if (gameObject != null)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
