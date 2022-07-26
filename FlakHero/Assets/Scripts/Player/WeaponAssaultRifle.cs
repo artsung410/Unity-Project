@@ -3,20 +3,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class AmmoEvent : UnityEngine.Events.UnityEvent<int, int> { }
+//public class AmmoEvent : UnityEngine.Events.UnityEvent<int, int> { }
 
 // 무기의 탄창수 정보가 바뀔때마다 외부에 있는 메소드를 자동으로 호출할수있게 만든다.
-[System.Serializable]
-public class MagazineEvent : UnityEngine.Events.UnityEvent<int> { }
+//[System.Serializable]
+//public class MagazineEvent : UnityEngine.Events.UnityEvent<int> { }
 
 public class WeaponAssaultRifle : MonoBehaviour
 {
     // ※※※※※※※※※※※※※※※※※※※※※ Event Instance ※※※※※※※※※※※※※※※※※※※※※
-    [HideInInspector]
-    public AmmoEvent                    onAmmoEvent = new AmmoEvent();
+    //[HideInInspector]
+    //public AmmoEvent                    onAmmoEvent = new AmmoEvent();
 
-    [HideInInspector]
-    public MagazineEvent                onMagazineEvent = new MagazineEvent();
+    //[HideInInspector]
+    //public MagazineEvent                onMagazineEvent = new MagazineEvent();
 
     // ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
 
@@ -84,11 +84,11 @@ public class WeaponAssaultRifle : MonoBehaviour
         // 총구 이펙트 오브젝트 비활성화
         muzzleFlashEffect.SetActive(false);
 
-        // 무기가 활성화될 때 해당 무기의 탄창 정보를 갱신한다
-        onMagazineEvent.Invoke(weaponSetting.currentMagazine);
+        //// 무기가 활성화될 때 해당 무기의 탄창 정보를 갱신한다
+        //onMagazineEvent.Invoke(weaponSetting.currentMagazine);
 
-        // 무기가 활성화될 때 해당 무기의 탄 수 정보를 갱신한다.
-        onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
+        //// 무기가 활성화될 때 해당 무기의 탄 수 정보를 갱신한다.
+        //onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
 
         ResetVariables();
     }
@@ -282,37 +282,37 @@ public class WeaponAssaultRifle : MonoBehaviour
         muzzleFlashEffect.SetActive(false);
     }
 
-    private IEnumerator OnReload()
-    {
-        isReload = true;
+    //private IEnumerator OnReload()
+    //{
+    //    isReload = true;
 
-        // 재장전 애니메이션, 사운드 재생
-        animator.OnRelaod();
-        PlaySound(audioClipReload);
+    //    // 재장전 애니메이션, 사운드 재생
+    //    animator.OnRelaod();
+    //    PlaySound(audioClipReload);
 
-        while(true)
-        {
-            // 사운드가 재생중이 아니고, 현재 애니메이션이 Movement이면
-            // 재장전 애니메이션(, 사운드) 재생이 종료되었따는 뜻
-            if (audioSource.isPlaying == false && animator.CurrentAnimationIs("Movement"))
-            {
-                isReload = false;
+    //    while(true)
+    //    {
+    //        // 사운드가 재생중이 아니고, 현재 애니메이션이 Movement이면
+    //        // 재장전 애니메이션(, 사운드) 재생이 종료되었따는 뜻
+    //        if (audioSource.isPlaying == false && animator.CurrentAnimationIs("Movement"))
+    //        {
+    //            isReload = false;
 
-                // 현재 탄창 수를 1 감소시키고, 바뀐 탄창 정보를 Text UI에 업데이트
-                weaponSetting.currentMagazine--;
-                onMagazineEvent.Invoke(weaponSetting.currentMagazine);
+    //            // 현재 탄창 수를 1 감소시키고, 바뀐 탄창 정보를 Text UI에 업데이트
+    //            weaponSetting.currentMagazine--;
+    //            onMagazineEvent.Invoke(weaponSetting.currentMagazine);
 
-                // 현재 탄 수를 최대로 설정하고, 바뀐 탄 수 정보를 Text UI에 업데이트
-                weaponSetting.currentAmmo = weaponSetting.maxAmmo;
-                onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
+    //            // 현재 탄 수를 최대로 설정하고, 바뀐 탄 수 정보를 Text UI에 업데이트
+    //            weaponSetting.currentAmmo = weaponSetting.maxAmmo;
+    //            onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
 
-                yield break; 
-            }
+    //            yield break; 
+    //        }
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-    }
+    //}
 
     private void ResetVariables()
     {

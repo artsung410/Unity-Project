@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Input KeyCodes")]
     public      KeyCode                     KeyCodeRun = KeyCode.LeftShift;     // 달리기 키
     public      KeyCode                     KeyCodeJump = KeyCode.Space;        // 점프 키
-    public      KeyCode                     keyCodeReload = KeyCode.R;          // 탄 재장전 키
+    //public      KeyCode                     keyCodeReload = KeyCode.R;          // 탄 재장전 키
 
     [Header("Audio Clips")]
     public      AudioClip                   audioClipWalk;  // 걷기 사운드
@@ -127,10 +127,10 @@ public class PlayerController : MonoBehaviour
             Weapon.StopWeaponAction(1);
         }
 
-        if (Input.GetKeyDown(keyCodeReload))
-        {
-            Weapon.StartReload();
-        }
+        //if (Input.GetKeyDown(keyCodeReload))
+        //{
+        //    Weapon.StartReload();
+        //}
     }
 
     public void TakeDamage(int damage)
