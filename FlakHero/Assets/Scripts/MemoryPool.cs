@@ -21,6 +21,9 @@ public class MemoryPool : MonoBehaviour
     public int MaxCount => maxCount;         // 외부에서 현재 리스트에 등록되어 있는 오브젝트 개수 확인을 위한 프로퍼티
     public int AcitveCount => activeCount;   // 외부에서 현재 활성화 되어 있는 오브젝트 개수 확인을 위한 프로퍼티
 
+    // 오브젝트가 임시로 보관되는 위치
+    private Vector3 tempPosition = new Vector3(48, 1, 48);
+
     public MemoryPool(GameObject poolObject)
     {
         maxCount = 0;
@@ -45,6 +48,9 @@ public class MemoryPool : MonoBehaviour
 
             poolItem.isActive = false;
             poolItem.gameObject = GameObject.Instantiate(poolObject);
+
+            // 오브젝트를 생성할 때 오브젝트의 위치를 tempPosition으로 설정
+            poolItem.gameObject.transform.position = tempPosition; 
             poolItem.gameObject.SetActive(false);
 
             poolItemList.Add(poolItem);
@@ -121,6 +127,8 @@ public class MemoryPool : MonoBehaviour
             {
                 activeCount--;
 
+                // 오브젝트를 비활성화 할 때 오브젝트의 위치를 tempPosition으로 설정
+                poolItem.gameObject.transform.position = tempPosition; 
                 poolItem.isActive = false;
                 poolItem.gameObject.SetActive(false);
 
