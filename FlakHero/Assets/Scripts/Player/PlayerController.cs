@@ -36,10 +36,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateRotate();
-        UpdateMove();
-        UpdateJump();
-        UpdateWeaponAction();
+        if (GameManager.Instance.IsGameOver == false)
+        {
+            UpdateRotate();
+            UpdateMove();
+            UpdateJump();
+            UpdateWeaponAction();
+        }
     }
 
     void UpdateRotate()

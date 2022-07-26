@@ -43,6 +43,7 @@ public class Status : MonoBehaviour
 
         if ( currentHP == 0)
         {
+            GameManager.Instance.EndGame();
             return true;
         }
 

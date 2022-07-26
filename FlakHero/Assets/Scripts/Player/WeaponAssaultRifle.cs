@@ -61,7 +61,6 @@ public class WeaponAssaultRifle : MonoBehaviour
 
     // 『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『
 
-
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -180,8 +179,8 @@ public class WeaponAssaultRifle : MonoBehaviour
             }
 
             // 因維獣 currentAmmo 1 姶社, 添 呪 UI 穣汽戚闘
-            weaponSetting.currentAmmo--;
-            onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
+            //weaponSetting.currentAmmo--;
+            //onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
 
             // 巷奄 蕉艦五戚芝 仙持
             string animation = animator.AimModeIs == true ? "AimFire" : "Fire";
