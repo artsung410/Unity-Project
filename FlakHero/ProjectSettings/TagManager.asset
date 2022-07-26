@@ -16,6 +16,7 @@ TagManager:
   - EnemyB
   - EnemyA
   - EffectiveRange
+  - Missile
   layers:
   - Default
   - TransparentFX

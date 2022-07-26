@@ -13,6 +13,8 @@ public class RotateToMouse : MonoBehaviour
     private float eulerAngleX;
     private float eulerAngleY;
 
+    public GameObject Rader_Player;
+
     public void UpdateRotate(float mouseX, float mouseY)
     {
         eulerAngleY += mouseX * rotCamYAxisSpeed; // 마우스 좌 / 우 이동으로 카메라 y축 회전
@@ -22,6 +24,8 @@ public class RotateToMouse : MonoBehaviour
         eulerAngleX = ClampAngle(eulerAngleX, limitMinX, limitMaxX);
 
         transform.rotation = Quaternion.Euler(eulerAngleX, eulerAngleY, 0);
+
+        Rader_Player.transform.rotation = Quaternion.Euler(0, 0, -eulerAngleY * 1.1f);
     }
 
     private float ClampAngle(float angle, float min, float max)
