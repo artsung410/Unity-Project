@@ -19,6 +19,9 @@ public class GameManager : SingletonBehaviour<GameManager>
     [HideInInspector]
     public string ImpactNormal = "ImpactNormal";
 
+    [HideInInspector]
+    public string DropBox = "DropBox";
+
     public GameObject gameOVerUI;
     public GameOverUI gameOVerUI_restart;
 

@@ -24,9 +24,13 @@ public abstract class EnemyAircraft : MonoBehaviour
     [SerializeField]
     protected float explosionForce = 1000.0f;
 
+    [SerializeField]
+    private GameObject SupplyBoxPrefab;
+
     protected bool isExplode = false;
 
-    // 추상메소드
+    private int RandomDropIndex;
+
     public void TakeDamage(int damage)
     {
         currentHP -= damage;
@@ -34,6 +38,15 @@ public abstract class EnemyAircraft : MonoBehaviour
         if (currentHP <= 0 && isExplode == false)
         {
             StartCoroutine("ExplodeAircraft");
+
+            RandomDropIndex = Random.Range(1, 3);
+            //Debug.Log(RandomDropIndex);
+
+            if (RandomDropIndex == 1)
+            {
+                GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
+                item.SetActive(true);
+            }
         }
     }
 

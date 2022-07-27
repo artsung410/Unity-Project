@@ -11,9 +11,9 @@ public class RotateToMouse : MonoBehaviour
     private float limitMinX = -80; // 카메라 x축 회전 범위 (최소)
     private float limitMaxX = 50; // 카메라 x축 회전 범위 (최대)
     private float eulerAngleX;
-    private float eulerAngleY;
+    public float eulerAngleY;
 
-    public GameObject Rader_Player;
+    public GameObject Rader;
 
     public void UpdateRotate(float mouseX, float mouseY)
     {
@@ -25,7 +25,7 @@ public class RotateToMouse : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(eulerAngleX, eulerAngleY, 0);
 
-        Rader_Player.transform.rotation = Quaternion.Euler(0, 0, -eulerAngleY);
+        Rader.transform.rotation = Quaternion.Euler(0, 0, -eulerAngleY);
     }
 
     private float ClampAngle(float angle, float min, float max)

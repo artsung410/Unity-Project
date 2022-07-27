@@ -17,6 +17,7 @@ TagManager:
   - EnemyA
   - EffectiveRange
   - Missile
+  - DropBox
   layers:
   - Default
   - TransparentFX

@@ -214,6 +214,11 @@ public class WeaponAssaultRifle : WeaponBase
             {
                 hit.transform.GetComponent<EnemyAircraft>().TakeDamage(weaponSetting.damage);
             }
+
+            else if(hit.transform.CompareTag(GameManager.Instance.DropBox))
+            {
+                hit.transform.GetComponent<SupplyBox>().TakeDamage(weaponSetting.damage);
+            }
         }
 
         Debug.DrawRay(bulletSpawnPoint.position, attackDirection * weaponSetting.attackDistance, Color.blue);
