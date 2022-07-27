@@ -54,11 +54,6 @@ public class EnemyMemoryPool : MonoBehaviour
 
         while (true)
         {
-            if ((GameManager.Instance.IsGameOver == true))
-            {
-                break;
-            }
-
             for (int i = 0; i < numberOfEnemiesSpawnedAtOnce; ++i)
             {
                 GameObject item = spawnPointMemoryPool.ActivatePoolItem(); // 기둥 오브젝트를 생성하고

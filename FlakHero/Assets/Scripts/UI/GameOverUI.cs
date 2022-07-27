@@ -1,15 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class GameOverUI : MonoBehaviour
 {
-    private void Update()
+    private GameObject[] childs;
+    private int childCount;
+    void Awake()
     {
-        if(GameManager.Instance.IsGameOver == true)
+        childCount = transform.childCount;
+        childs = new GameObject[childCount];
+        for (int i = 0; i < childCount; i++)
         {
-            gameObject.SetActive(true);
+            childs[i] = transform.GetChild(i).gameObject;
         }
     }
 
+    void OnEnable()
+    {
+        GameManager.Instance.OnGameEnd.AddListener(Activate);
+    }
+
+    public void Activate()
+    {
+        for (int i = 0; i < childCount; i++)
+        {
+            childs[i].SetActive(true);
+        }
+    }
+
+    void OnDisable()
+    {
+        GameManager.Instance.OnGameEnd.RemoveListener(Activate);
+    }
 }

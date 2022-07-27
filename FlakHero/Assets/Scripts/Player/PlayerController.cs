@@ -34,13 +34,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.IsGameOver == false)
-        {
-            UpdateRotate();
-            UpdateMove();
-            UpdateJump();
-            UpdateWeaponAction();
-        }
+        UpdateRotate();
+        UpdateMove();
+        UpdateJump();
+        UpdateWeaponAction();
     }
 
     void UpdateRotate()
@@ -82,7 +79,9 @@ public class PlayerController : MonoBehaviour
         // 제자리에 멈춰있을 때
         else
         {
-            movement.MoveSpeed = 0;
+            Debug.Log("제자리에 멈춤");
+            //movement.MoveSpeed = 0;
+            Weapon.Animator.MoveSpeed = 0;
 
             // 멈췄을 때 사운드가 재생중이면 정지
             if (audioSource.isPlaying == true)

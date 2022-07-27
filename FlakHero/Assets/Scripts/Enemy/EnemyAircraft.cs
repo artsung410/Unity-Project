@@ -38,17 +38,6 @@ public abstract class EnemyAircraft : MonoBehaviour
         if (currentHP <= 0 && isExplode == false)
         {
             StartCoroutine("ExplodeAircraft");
-
-            GameManager.Instance.AddScore();
-
-            RandomDropIndex = Random.Range(1, 3);
-            //Debug.Log(RandomDropIndex);
-
-            if (RandomDropIndex == 1)
-            {
-                GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
-                item.SetActive(true);
-            }
         }
     }
 
@@ -77,5 +66,22 @@ public abstract class EnemyAircraft : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+
+        ItemAirDrop();
+
+        GameManager.Instance.AddScore();
+    }
+
+    void ItemAirDrop()
+    {
+        // 33% È®·ü·Î µå¶ø
+
+        RandomDropIndex = Random.Range(1, 3);
+
+        if (RandomDropIndex == 1)
+        {
+            GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
+            item.SetActive(true);
+        }
     }
 }

@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 // 점수와 게임 오버 여부를 관리하는 게임 매니저
 
 public class GameManager : SingletonBehaviour<GameManager>
 {
+    [HideInInspector]
     public bool IsGameOver;// 게임 오버 상태
 
     [HideInInspector]
@@ -23,8 +23,22 @@ public class GameManager : SingletonBehaviour<GameManager>
     [HideInInspector]
     public string DropBox = "DropBox";
 
-    // score 관리
-    public UnityEvent<int> OnScoreChange = new UnityEvent<int>();
+    [System.Serializable]
+    public class GameEndEvent : UnityEngine.Events.UnityEvent{ }
+
+    [System.Serializable]
+    public class ScoreChangeEvent : UnityEngine.Events.UnityEvent<int> { }
+
+    // ※※※※※※※※※※※※※※※※※※※※※ Event Instance ※※※※※※※※※※※※※※※※※※※※※
+    [HideInInspector]
+    public GameEndEvent OnGameEnd = new GameEndEvent();
+
+    [HideInInspector]
+    public ScoreChangeEvent OnScoreChange = new ScoreChangeEvent();
+
+    // ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+
+    private bool isEnd = false;
 
     private int currentScore = 0;
 
@@ -44,32 +58,30 @@ public class GameManager : SingletonBehaviour<GameManager>
         }
     }
 
-    public GameObject gameOVerUI;
-    //public GameOverUI gameOVerUI_restart;
-
     private void Update()
     {
-        if (IsGameOver == true && Input.GetKeyDown(KeyCode.R))
+        if (isEnd && Input.GetKeyDown(KeyCode.R))
         {
-            IsGameOver = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-    public void EndGame()
-    {
-        // 게임 오버 상태를 참으로 변경
-        IsGameOver = true;
-        // 게임 오버 UI를 활성화
-        if (gameOVerUI != null)
-        {
-            gameOVerUI.SetActive(true);
+            Reset();
+            SceneManager.LoadScene(0);
         }
     }
 
     public void AddScore()
     {
         CurrentScore += ScoreIncreaseAmount;
+    }
+
+    public void End()
+    {
+        isEnd = true;
+        OnGameEnd.Invoke();
+    }
+
+    private void Reset()
+    {
+        currentScore = 0;
+        isEnd = false;
     }
 
 }
