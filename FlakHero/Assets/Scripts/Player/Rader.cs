@@ -28,8 +28,8 @@ public class Rader : MonoBehaviour
 
     private Vector3 CalculateDistanceOfRader(Collider enemy)
     {
-        float raderCenterX = RaderCanvas.position.x - 95;
-        float raderCenterY = RaderCanvas.position.y - 105;
+        float raderCenterX = 0f;
+        float raderCenterY = 0f;
 
         float worldPlayerX = player.position.x;
         float worldPlayerY = player.position.z;
@@ -41,7 +41,7 @@ public class Rader : MonoBehaviour
         float deltaY = (wolrdEnemyY - worldPlayerY);
 
         Vector3 PlayerRaderDirection = new Vector3(raderCenterX, raderCenterY, 0);
-        Vector3 EnemyRaderDirection = new Vector3(deltaX * 0.7f + RaderCanvas.position.x, deltaY * 0.7f + RaderCanvas.position.y, 0);
+        Vector3 EnemyRaderDirection = new Vector3(deltaX * 0.8f + RaderCanvas.position.x, deltaY * 0.8f + RaderCanvas.position.y, 0);
         Vector3 Distance = EnemyRaderDirection - PlayerRaderDirection;
 
         return Distance;
