@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ImpactType { Normal = 0, Obstacle, Enemy, InteractionObject,}
+public enum ImpactType { Normal = 0, Enemy, DropBox}
 
 public class ImpactMemoryPool : MonoBehaviour
 {
@@ -33,10 +33,10 @@ public class ImpactMemoryPool : MonoBehaviour
             OnSpawnImpact(ImpactType.Enemy, hit.point, Quaternion.LookRotation(hit.normal));
         }
 
-        else if (hit.transform.CompareTag("InteractionObject"))
+        else if (hit.transform.CompareTag("DropBox"))
         {
             Color color = hit.transform.GetComponentInChildren<MeshRenderer>().material.color;
-            OnSpawnImpact(ImpactType.InteractionObject, hit.point, Quaternion.LookRotation(hit.normal), color);
+            OnSpawnImpact(ImpactType.DropBox, hit.point, Quaternion.LookRotation(hit.normal), color);
         }
     }
      
@@ -47,7 +47,7 @@ public class ImpactMemoryPool : MonoBehaviour
         item.transform.rotation = rotation;
         item.GetComponent<Impact>().Setup(memoryPool[(int)type]);
 
-        if (type == ImpactType.InteractionObject)
+        if (type == ImpactType.DropBox)
         {
             ParticleSystem.MainModule main = item.GetComponent<ParticleSystem>().main;
             main.startColor = color;

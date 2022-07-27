@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 // 점수와 게임 오버 여부를 관리하는 게임 매니저
@@ -22,8 +23,29 @@ public class GameManager : SingletonBehaviour<GameManager>
     [HideInInspector]
     public string DropBox = "DropBox";
 
+    // score 관리
+    public UnityEvent<int> OnScoreChange = new UnityEvent<int>();
+
+    private int currentScore = 0;
+
+    public int ScoreIncreaseAmount = 50;
+
+    [HideInInspector]
+    public int CurrentScore
+    {
+        get
+        {
+            return currentScore;
+        }
+        set
+        {
+            currentScore = value;
+            OnScoreChange.Invoke(currentScore);
+        }
+    }
+
     public GameObject gameOVerUI;
-    public GameOverUI gameOVerUI_restart;
+    //public GameOverUI gameOVerUI_restart;
 
     private void Update()
     {
@@ -43,6 +65,11 @@ public class GameManager : SingletonBehaviour<GameManager>
         {
             gameOVerUI.SetActive(true);
         }
+    }
+
+    public void AddScore()
+    {
+        CurrentScore += ScoreIncreaseAmount;
     }
 
 }

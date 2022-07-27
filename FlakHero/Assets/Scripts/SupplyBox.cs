@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ItemType { Heal = 0, Coin}
+
 public class SupplyBox : MonoBehaviour
 {
     // 자식클래스에 사용할수있도록 protected로 선언
@@ -15,19 +17,34 @@ public class SupplyBox : MonoBehaviour
     [SerializeField]
     protected GameObject explosionPrefab;
 
+    [SerializeField]
+    public GameObject[] ItemPrefabs;      // 아이템 프리팹
+
     protected bool isExplode = false;
+
+    float elapsedTime;
 
     private void Awake()
     {
         currentHP = maxHP; 
     }
 
+    private void Update()
+    {
+        elapsedTime += Time.deltaTime;
+    }
+
     public void TakeDamage(int damage)
     {
-        currentHP -= damage;
-
-        if (currentHP <= 0 && isExplode == false && transform.position.y < 0.5)
+        if (transform.position.y < 0.5)
         {
+            currentHP -= damage;
+        }
+
+        if (currentHP <= 0 && isExplode == false)
+        {
+            ItemDrop(ItemPrefabs);
+
             StartCoroutine("Explode");
         }
     }
@@ -43,5 +60,15 @@ public class SupplyBox : MonoBehaviour
         gameObject.SetActive(false);
 
         yield return null;
+    }
+
+    private void ItemDrop(GameObject[] items)
+    {
+        int randIndex = (int)elapsedTime % 2; 
+
+        Vector3 itemDropPosition = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+
+        GameObject Heal = Instantiate(items[randIndex], itemDropPosition, transform.rotation);
+        Heal.SetActive(true);
     }
 }

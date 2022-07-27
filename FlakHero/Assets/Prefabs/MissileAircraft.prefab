@@ -1205,9 +1205,11 @@ MonoBehaviour:
   explosionDelayTime: 3
   explosionRadius: 10
   explosionForce: 1000
+  SupplyBoxPrefab: {fileID: 5143383603307160316, guid: b6a8755b35a02e540a96b7c6b5c42377, type: 3}
   flightSpeed: 20
   target: {fileID: 0}
   MissilePrefab: {fileID: 0}
   MissileSpawnPoint: {fileID: 859870697964432277}
   IsRreadyToLaunchMissile: 0
   IsMissileLunched: 0
+  survivalTime: 2

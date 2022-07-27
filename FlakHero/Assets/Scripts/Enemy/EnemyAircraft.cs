@@ -39,6 +39,8 @@ public abstract class EnemyAircraft : MonoBehaviour
         {
             StartCoroutine("ExplodeAircraft");
 
+            GameManager.Instance.AddScore();
+
             RandomDropIndex = Random.Range(1, 3);
             //Debug.Log(RandomDropIndex);
 
