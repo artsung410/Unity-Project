@@ -300,8 +300,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: -0.5}
 --- !u!54 &5368322977778174766
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -330,13 +330,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b7599df801f09409025a782380c8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
   explosionPrefab: {fileID: 6883561620270123213, guid: 7d4ea6824b17d02408362c052d85a698, type: 3}
-  explosionDelayTime: 0
   explosionRadius: 10
   explosionForce: 1000
   SupplyBoxPrefab: {fileID: 5143383603307160316, guid: b6a8755b35a02e540a96b7c6b5c42377, type: 3}
+  isRandomItemDrop: 0
+  maxHP: 100
+  currentHP: 0
   flightSpeed: 20
   target: {fileID: 0}
   IsSreachedPlayer: 0

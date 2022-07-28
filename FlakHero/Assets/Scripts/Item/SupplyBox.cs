@@ -22,16 +22,15 @@ public class SupplyBox : MonoBehaviour
 
     protected bool isExplode = false;
 
-    float elapsedTime;
+    int randNum;
 
+    private void Start()
+    {
+        randNum = Random.Range(0, 4);
+    }
     private void Awake()
     {
         currentHP = maxHP; 
-    }
-
-    private void Update()
-    {
-        elapsedTime += Time.deltaTime;
     }
 
     public void TakeDamage(int damage)
@@ -64,13 +63,11 @@ public class SupplyBox : MonoBehaviour
 
     private void ItemInit(GameObject[] items)
     {
-        int randIndex = (int)elapsedTime % 4;
-
-        Debug.Log(randIndex);
+        Debug.Log(randNum);
 
         Vector3 itemDropPosition = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
 
-        GameObject Heal = Instantiate(items[randIndex], itemDropPosition, transform.rotation);
+        GameObject Heal = Instantiate(items[randNum], itemDropPosition, transform.rotation);
         Heal.SetActive(true);
     }
 }

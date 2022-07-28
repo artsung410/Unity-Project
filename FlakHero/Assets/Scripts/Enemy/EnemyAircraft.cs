@@ -23,6 +23,8 @@ public abstract class EnemyAircraft : MonoBehaviour
 
     private int RandomDropIndex;
 
+    public bool isRandomItemDrop;
+
     public abstract void TakeDamage(int damage);
 
     public IEnumerator ExplodeAircraft()
@@ -55,13 +57,24 @@ public abstract class EnemyAircraft : MonoBehaviour
     protected void ItemAirDrop()
     {
         // 33% È®·ü·Î µå¶ø
-
-        RandomDropIndex = Random.Range(1, 3);
-
-        if (RandomDropIndex == 1)
+        if (isRandomItemDrop == true)
         {
-            GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
-            item.SetActive(true);
+            RandomDropIndex = Random.Range(1, 3);
+
+            if (RandomDropIndex == 1)
+            {
+                ItemInit();
+            }
         }
+        else
+        {
+            ItemInit();
+        }
+    }
+
+    void ItemInit()
+    {
+        GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
+        item.SetActive(true);
     }
 }

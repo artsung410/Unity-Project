@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8797503729040319118}
   - component: {fileID: 2275799564764691426}
-  - component: {fileID: 2434925759457847446}
+  - component: {fileID: 7144736024893632652}
   m_Layer: 0
   m_Name: FlakeItem
   m_TagString: Emp
@@ -131,7 +131,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.55
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2434925759457847446
+--- !u!114 &7144736024893632652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,10 +140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2434925759457847447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9ad356667e837f48931b8134491ade8, type: 3}
+  m_Script: {fileID: 11500000, guid: 54bf3b60803765148a08adff35c736e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmpEffectPrefeb: {fileID: 5113463650391803225, guid: efe1aff149ac32d479ca0d0782823e49, type: 3}
+  AutoTurretPrefeb: {fileID: 7230289518748019578, guid: 83cae775a866c94488ff97acaae3792e, type: 3}
   moveDistance: 0.2
   pingpongSpeed: 0.5
   rotateSpeed: 50
