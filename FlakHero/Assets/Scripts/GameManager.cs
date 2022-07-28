@@ -36,7 +36,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     [HideInInspector]
     public ScoreChangeEvent OnScoreChange = new ScoreChangeEvent();
 
-    // �ءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءء�
+    // �ءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءءء�
 
     private bool isEnd = false;
 

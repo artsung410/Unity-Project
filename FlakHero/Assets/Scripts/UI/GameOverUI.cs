@@ -30,6 +30,9 @@ public class GameOverUI : MonoBehaviour
 
     void OnDisable()
     {
-        GameManager.Instance.OnGameEnd.RemoveListener(Activate);
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnGameEnd.RemoveListener(Activate);
+        }
     }
 }

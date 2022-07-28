@@ -25,9 +25,9 @@ public class ScoreUI : MonoBehaviour
 
     private void OnDisable()
     {
-        GameManager.Instance.OnScoreChange.RemoveListener(UpdateText);
-
-        //GameManager.Instance.OnScoreChanged2 -= UpdateText; 
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnScoreChange.RemoveListener(UpdateText);
+        }
     }
-
 }
