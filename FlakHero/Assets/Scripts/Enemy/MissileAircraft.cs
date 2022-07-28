@@ -7,6 +7,12 @@ public class MissileAircraft : EnemyAircraft
     [Header("MisslieAircraft")]
 
     [SerializeField]
+    protected int maxHP = 100; // 최대체력
+
+    [SerializeField]
+    protected int currentHP; // 현재체력
+
+    [SerializeField]
     private float flightSpeed = 10f; // 비행 스피드
 
     Vector3 destoryDirection; // 플레이어를 지나쳤을경우 추후 파괴지점 설정
@@ -35,6 +41,19 @@ public class MissileAircraft : EnemyAircraft
     private void Update()
     {
         MoveAndFireMissile();
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        if (currentHP <= 0 && isExplode == false)
+        {
+            StartCoroutine("ExplodeAircraft");
+
+            ItemAirDrop();
+            GameManager.Instance.AddScore();
+        }
+
+        currentHP -= damage;
     }
 
     void MoveAndFireMissile()
@@ -76,8 +95,6 @@ public class MissileAircraft : EnemyAircraft
         if (other.tag == GameManager.Instance.EffectiveRange)
         {
             IsRreadyToLaunchMissile = true;
-
-            Debug.Log("F22 충돌");
         }
     }
 }

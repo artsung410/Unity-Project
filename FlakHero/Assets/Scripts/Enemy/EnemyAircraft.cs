@@ -6,17 +6,9 @@ public abstract class EnemyAircraft : MonoBehaviour
 {
     // 자식클래스에 사용할수있도록 protected로 선언
     [Header("EnemyAircraft")]
-    [SerializeField]
-    protected int maxHP = 100; // 최대체력
-
-    [SerializeField]
-    protected int currentHP; // 현재체력
 
     [SerializeField]
     protected GameObject explosionPrefab;
-
-    [SerializeField]
-    protected float explosionDelayTime = 0.1f;
 
     [SerializeField]
     protected float explosionRadius = 10.0f;
@@ -31,20 +23,10 @@ public abstract class EnemyAircraft : MonoBehaviour
 
     private int RandomDropIndex;
 
-    public void TakeDamage(int damage)
+    public abstract void TakeDamage(int damage);
+
+    protected IEnumerator ExplodeAircraft()
     {
-        currentHP -= damage;
-
-        if (currentHP <= 0 && isExplode == false)
-        {
-            StartCoroutine("ExplodeAircraft");
-        }
-    }
-
-    private IEnumerator ExplodeAircraft()
-    {
-        yield return new WaitForSeconds(explosionDelayTime);
-
         // 근처의 전투기가 터져서 다시 현재 전투기를 터트리려고 할 때(StackOverflow 방지)
         isExplode = true;
 
@@ -52,27 +34,12 @@ public abstract class EnemyAircraft : MonoBehaviour
         Bounds bounds = GetComponent<Collider>().bounds;
         Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
 
-        //// 폭발 범위에 있는 모든 오브젝트의 collider 정보를 받아와 폭발 효과 처리
-        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
-        foreach (Collider hit in colliders)
-        {
-            // 폭발 범위에 부딪힌 오브젝트가 플레이어일 때 처리
-            PlayerController player = hit.GetComponent<PlayerController>();
-            if (player != null)
-            {
-                player.TakeDamage(5);
-                continue;
-            }
-        }
-
         gameObject.SetActive(false);
 
-        ItemAirDrop();
-
-        GameManager.Instance.AddScore();
+        yield return null;
     }
 
-    void ItemAirDrop()
+    protected void ItemAirDrop()
     {
         // 33% 확률로 드랍
 

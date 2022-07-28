@@ -43,9 +43,9 @@ public class SupplyBox : MonoBehaviour
 
         if (currentHP <= 0 && isExplode == false)
         {
-            ItemDrop(ItemPrefabs);
-
             StartCoroutine("Explode");
+
+            ItemInit(ItemPrefabs);
         }
     }
 
@@ -62,7 +62,7 @@ public class SupplyBox : MonoBehaviour
         yield return null;
     }
 
-    private void ItemDrop(GameObject[] items)
+    private void ItemInit(GameObject[] items)
     {
         int randIndex = (int)elapsedTime % 2; 
 

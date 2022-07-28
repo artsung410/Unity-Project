@@ -79,7 +79,6 @@ public class PlayerController : MonoBehaviour
         // 제자리에 멈춰있을 때
         else
         {
-            Debug.Log("제자리에 멈춤");
             //movement.MoveSpeed = 0;
             Weapon.Animator.MoveSpeed = 0;
 

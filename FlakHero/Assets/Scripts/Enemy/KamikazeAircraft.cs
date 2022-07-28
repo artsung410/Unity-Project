@@ -7,6 +7,12 @@ public class KamikazeAircraft : EnemyAircraft
     [Header("KamikazeAircraft")]
 
     [SerializeField]
+    protected int maxHP = 100; // 최대체력
+
+    [SerializeField]
+    protected int currentHP; // 현재체력
+
+    [SerializeField]
     private float flightSpeed = 10f; // 비행 스피드
 
     [SerializeField]
@@ -25,6 +31,19 @@ public class KamikazeAircraft : EnemyAircraft
         MoveAndSelfDestruct();
     }
 
+    public override void TakeDamage(int damage)
+    {
+        if (currentHP <= 0 && isExplode == false)
+        {
+            StartCoroutine("ExplodeAircraft");
+
+            ItemAirDrop();
+            GameManager.Instance.AddScore();
+        }
+
+        currentHP -= damage;
+    }
+
     void MoveAndSelfDestruct()
     {
         Vector3 to = new Vector3(target.transform.position.x, target.transform.position.y + 5, target.transform.position.z);
@@ -40,6 +59,8 @@ public class KamikazeAircraft : EnemyAircraft
             StartCoroutine("ExplodeAircraft");
         }
     }
+
+
 
     private void OnTriggerEnter(Collider other)
     {
