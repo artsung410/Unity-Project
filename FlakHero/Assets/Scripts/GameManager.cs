@@ -29,6 +29,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     [System.Serializable]
     public class ScoreChangeEvent : UnityEngine.Events.UnityEvent<int> { }
 
+
     // �ءءءءءءءءءءءءءءءءءءءء� Event Instance �ءءءءءءءءءءءءءءءءءءءء�
     [HideInInspector]
     public GameEndEvent OnGameEnd = new GameEndEvent();

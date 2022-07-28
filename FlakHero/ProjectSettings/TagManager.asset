@@ -18,6 +18,7 @@ TagManager:
   - EffectiveRange
   - Missile
   - DropBox
+  - Emp
   layers:
   - Default
   - TransparentFX

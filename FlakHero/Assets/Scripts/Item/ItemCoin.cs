@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ItemCoin : ItemBase
 {
-    //[SerializeField]
-    //private GameObject CoinEffectPrefeb;
+    [SerializeField]
+    private GameObject CoinEffectPrefeb;
 
     [SerializeField]
     private float moveDistance = 0.2f;
@@ -42,8 +42,7 @@ public class ItemCoin : ItemBase
         // 플레이어 상태 업데이트
         //entity.GetComponent<Status>().IncreaseHP(increaseHP);
 
-        // 이펙트 효과, 사운드 재생
-        //Instantiate(hpEffectPrefeb, transform.position, Quaternion.identity);
+
 
         Destroy(gameObject);
     }
