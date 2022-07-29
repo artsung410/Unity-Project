@@ -5,23 +5,42 @@ using UnityEngine;
 public class AutoTurret : MonoBehaviour
 {
     // 1, 2, 3, 4 분면
-    int[] dx = { 20, -20, -20, 20 };
-    int[] dz = { 20, 20, -20, -20 };
+    int[] dx = { 10, -10, -10, 10 };
+    int[] dz = { 10, 10, -10, -10 };
 
     public int randomPos;
 
     private bool isReadyToLaunch = false;
 
     [SerializeField]
-    private float SpawnCoolTime = 0.5f;
+    private float SpawnCoolTime = 2f;
+
+    [SerializeField]
+    private float LifeTime = 1f;
 
     [SerializeField]
     private GameObject ProjectilePrefab;
 
     [SerializeField]
-    private Transform ProjectileSpawnPoint;
+    private GameObject FlakInitEffect;
+
+    [SerializeField]
+    private Transform BulletSpawnPoint;
+
+    [SerializeField]
+    private GameObject FlakHead;
 
     public GameObject target;
+
+
+    private MemoryPool bulletMemoryPool;
+
+
+    private void Awake()
+    {
+        bulletMemoryPool = new MemoryPool(ProjectilePrefab);
+
+    }
 
     private void Start()
     {
@@ -33,6 +52,11 @@ public class AutoTurret : MonoBehaviour
             if (false == IsExistTurretsOnMap[randomPos])
             {
                 transform.position = new Vector3(dx[randomPos], 1, dz[randomPos]);
+
+                // 생성 되었을 때 이펙트 효과
+                GameObject particle = Instantiate(FlakInitEffect, transform.position, Quaternion.identity);
+                Destroy(particle.gameObject, 1f);
+
                 GameManager.Instance.IsAutoTurretOnWorld[randomPos] = true;
                 break;
             }
@@ -61,10 +85,10 @@ public class AutoTurret : MonoBehaviour
         if (isReadyToLaunch)
         {
             Vector3 to = target.transform.position;
-            Vector3 from = transform.position;
+            Vector3 from = FlakHead.transform.position;
             Vector3 dir = to - from;
 
-            transform.rotation = Quaternion.LookRotation(dir);
+            FlakHead.transform.rotation = Quaternion.LookRotation(dir);
         }
     }
 
@@ -75,29 +99,35 @@ public class AutoTurret : MonoBehaviour
             target = other.gameObject;
             isReadyToLaunch = true;
 
-            StartCoroutine("bulletLaunch");
+            StartCoroutine("BulletSpawn");
 
             if (other.gameObject.activeSelf == false)
             {
                 isReadyToLaunch = false;
-                StopCoroutine("bulletLaunch");
+                StopCoroutine("BulletSpawn");
             }
         }
     }
 
-    IEnumerator bulletLaunch()
+    IEnumerator BulletSpawn()
     {
         while (true)
         {
             if (isReadyToLaunch && target.activeSelf != false)
             {
-                GameObject bullet = Instantiate(ProjectilePrefab, ProjectileSpawnPoint.position, ProjectileSpawnPoint.rotation);
-                bullet.SetActive(true);
+                GameObject bullet = bulletMemoryPool.ActivatePoolItem();
+                bullet.transform.position = BulletSpawnPoint.position;
+                bullet.transform.rotation = BulletSpawnPoint.rotation;
+                StartCoroutine(DeActiveBullet(bullet));
             }
 
             yield return new WaitForSeconds(SpawnCoolTime);
-
-
         }
+    }
+
+    IEnumerator DeActiveBullet(GameObject bullet)
+    {
+        yield return new WaitForSeconds(LifeTime);
+        bulletMemoryPool.DeactivatePoolItem(bullet);
     }
 }

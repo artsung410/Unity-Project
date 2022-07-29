@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54bf3b60803765148a08adff35c736e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoTurretPrefeb: {fileID: 7230289518748019578, guid: 83cae775a866c94488ff97acaae3792e, type: 3}
+  FlakPrefeb: {fileID: 8000735323440191232, guid: 8f97e1388f8091c42b6e6ccb6d80cf57, type: 3}
   moveDistance: 0.2
   pingpongSpeed: 0.5
   rotateSpeed: 50

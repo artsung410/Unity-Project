@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemFlak : ItemBase
 {
     [SerializeField]
-    private GameObject AutoTurretPrefeb;
+    private GameObject FlakPrefeb;
 
     [SerializeField]
     private float moveDistance = 0.2f;
@@ -40,7 +40,7 @@ public class ItemFlak : ItemBase
     {
         GameManager.Instance.AddScore();
 
-        Instantiate(AutoTurretPrefeb);
+        Instantiate(FlakPrefeb);
 
         Destroy(gameObject);
     }

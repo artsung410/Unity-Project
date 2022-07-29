@@ -5,15 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField]
-    private float Speed = 10f; // 비행 스피드
+    private float Speed = 20f; // 비행 스피드
 
     [SerializeField]
     int bulletDamage = 50;
-
-    void Start()
-    {
-        Destroy(gameObject, 3f);
-    }
 
     void Update()
     {
