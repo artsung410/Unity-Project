@@ -39,6 +39,8 @@ public class Status : MonoBehaviour
 
         onHPEvent.Invoke(previousHP, currentHP);
 
+        GameManager.Instance.CurrentHp = previousHP;
+
         if ( currentHP == 0)
         {
             GameManager.Instance.End();

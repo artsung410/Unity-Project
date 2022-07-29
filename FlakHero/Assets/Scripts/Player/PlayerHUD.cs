@@ -19,19 +19,6 @@ public class PlayerHUD : MonoBehaviour
     [SerializeField]
     private Vector2[]           sizeWeaponIcons;    // 무기 아이콘의 UI 크기 배열
 
-    //[Header("Ammo")]
-    //public TextMeshProUGUI textAmmo;           // 현재 / 최대 탄 수 출력 Text
-
-    //[Header("Magazine")]
-    //public GameObject magazineUIPrefab;             // 탄창 UI 프리팹
-
-    //public Transform            magazineParent;     // 탄창 UI가 배치되는 panel
-
-    //[SerializeField]
-    //private int                 maxMagazineCount;   // 처음 생성하는 최대 탄창 수
-
-    //private List<GameObject>    magazineList;       // 탄창 UI 리스트
-
     [Header("HP & BloodScreen UI")]
     [SerializeField]
     private TextMeshProUGUI     textHP;             // 플레이어의 체력을 출력하는 Text
@@ -39,6 +26,9 @@ public class PlayerHUD : MonoBehaviour
     private Image               imageBloodScreen;   // 플레이어가 공격받았을 대 화면에 표시되는 Image
     [SerializeField]
     private AnimationCurve      curveBloodScreen;
+
+    [SerializeField]
+    private Image hpbar;
 
     private void Awake()
     {
@@ -115,7 +105,8 @@ public class PlayerHUD : MonoBehaviour
 
     void UpdateHPHUD(int previous, int current)
     {
-        textHP.text = "HP" + current;
+        hpbar.fillAmount = current / 100f;
+        textHP.text = string.Format("                                       HP {0} / 100", current);
 
         // 체력이 증가했을 때는 화면에 빨간색 이미지를 출력하지 않도록 return
         if (previous <= current) return;

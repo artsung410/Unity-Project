@@ -44,6 +44,8 @@ public class AutoTurret : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine("BulletSpawn");
+
         do
         {
             randomPos = Random.Range(0, 4);
@@ -78,11 +80,13 @@ public class AutoTurret : MonoBehaviour
             }
 
         } while (GameManager.Instance.IsAutoTurretOnWorld[randomPos]);
+
+
     }
 
     private void Update()
     {
-        if (isReadyToLaunch)
+        if (target != null)
         {
             Vector3 to = target.transform.position;
             Vector3 from = FlakHead.transform.position;
@@ -99,8 +103,6 @@ public class AutoTurret : MonoBehaviour
             target = other.gameObject;
             isReadyToLaunch = true;
 
-            StartCoroutine("BulletSpawn");
-
             if (other.gameObject.activeSelf == false)
             {
                 isReadyToLaunch = false;
@@ -113,6 +115,8 @@ public class AutoTurret : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(SpawnCoolTime);
+
             if (isReadyToLaunch && target.activeSelf != false)
             {
                 GameObject bullet = bulletMemoryPool.ActivatePoolItem();
@@ -120,8 +124,6 @@ public class AutoTurret : MonoBehaviour
                 bullet.transform.rotation = BulletSpawnPoint.rotation;
                 StartCoroutine(DeActiveBullet(bullet));
             }
-
-            yield return new WaitForSeconds(SpawnCoolTime);
         }
     }
 
