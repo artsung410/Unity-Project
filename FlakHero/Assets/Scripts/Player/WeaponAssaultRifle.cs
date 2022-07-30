@@ -138,7 +138,10 @@ public class WeaponAssaultRifle : WeaponBase
 
     public void OnAttack()
     {
-        HeatWeapon();
+        if (IsOnOverHeat == false)
+        {
+            HeatWeapon();
+        }
 
         if (heatingValue > 99.9 && IsOnOverHeat == false)
         {
@@ -149,7 +152,7 @@ public class WeaponAssaultRifle : WeaponBase
         if (Time.time - lastAttackTime > weaponSetting.attackRate)
         {
             // 뛰고있을 때는 공격할 수 없다.
-            if (animator.MoveSpeed > 0.5f)
+            if (animator.MoveSpeed > 0.5f || IsOnOverHeat == true)
             {
                 return;
             }

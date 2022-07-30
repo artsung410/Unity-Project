@@ -110,10 +110,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (Weapon.IsOnOverHeat == false)
-            {
-                Weapon.StartWeaponAction();
-            }
+            Weapon.StartWeaponAction();
         }
 
         else if (Input.GetMouseButtonUp(0))
@@ -123,10 +120,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            if (Weapon.IsOnOverHeat == false)
-            {
-                Weapon.StartWeaponAction(1);
-            }
+            Weapon.StartWeaponAction(1);
         }
 
         else if (Input.GetMouseButtonUp(1))

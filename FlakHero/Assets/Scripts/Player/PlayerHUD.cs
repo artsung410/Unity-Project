@@ -38,24 +38,28 @@ public class PlayerHUD : MonoBehaviour
     [SerializeField]
     private GameObject exceptionMark;
 
+    Animator weaponAnimator;
+
     private void Awake()
     {
         status.onHPEvent.AddListener(UpdateHPHUD);
         weapon.onOverHeatEvent.AddListener(UpdateOverHeatHUD);
+        weaponAnimator = imageWeaponIcon.GetComponent<Animator>();
     }
 
-    public void SetupAllWeapons(WeaponBase[] weapons)
-    {
-        //SetupMagazine();
 
-        // 사용 가능한 모든 무기의 이벤트 등록
+    //public void SetupAllWeapons(WeaponBase[] weapons)
+    //{
+    //    //SetupMagazine();
 
-        //for (int i = 0; i < weapons.Length; ++i)
-        //{
-        //    weapons[i].onAmmoEvent.AddListener(UpdateAmmoHUD);
-        //    weapon[i].onMagazineEvent.AddListener(UpdateMagazineHUD);
-        //}
-    }
+    //    // 사용 가능한 모든 무기의 이벤트 등록
+
+    //    //for (int i = 0; i < weapons.Length; ++i)
+    //    //{
+    //    //    weapons[i].onAmmoEvent.AddListener(UpdateAmmoHUD);
+    //    //    weapon[i].onMagazineEvent.AddListener(UpdateMagazineHUD);
+    //    //}
+    //}
 
     // 텍스트 웨폰 네임에 무기 이름을 출력하고 이미지 웨폰 아이콘에 무기 이미지를 출력한다.
     public void SwitchingWeapon(WeaponBase newWeapon)
@@ -90,13 +94,23 @@ public class PlayerHUD : MonoBehaviour
     void UpdateOverHeatHUD(float HeatCount)
     {
         overheatBar.fillAmount = HeatCount / 100f;
-        if (weapon.IsOnOverHeat)
+
+        float fillValue = overheatBar.fillAmount;
+
+        int colorValue = 255 - (int)((fillValue) * 255);
+        overheatBar.color = new Color32(255, (byte)colorValue, (byte)colorValue, 170);
+        Debug.Log(colorValue);
+
+        if (HeatCount > 99.9)
         {
             exceptionMark.SetActive(true);
+            weaponAnimator.SetBool("onOverHeat", true);
+
         }
         else
         {
             exceptionMark.SetActive(false);
+            weaponAnimator.SetBool("onOverHeat", false);
         }
     }
 
