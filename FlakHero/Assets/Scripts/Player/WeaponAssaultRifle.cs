@@ -6,34 +6,35 @@ using UnityEngine.UI;
 public class WeaponAssaultRifle : WeaponBase
 {
 
+
     [Header("Fire Effects")]
-    public GameObject                   muzzleFlashEffect;      // 총구 이펙트 (On / Off)
+    public GameObject muzzleFlashEffect;      // 총구 이펙트 (On / Off)
 
     [Header("Spawn Points")]
-    public Transform                    casingSpawnPoint;       // 탄피 생성 위치 
-    public Transform                    bulletSpawnPoint;       // 총알 생성 위치
+    public Transform casingSpawnPoint;       // 탄피 생성 위치 
+    public Transform bulletSpawnPoint;       // 총알 생성 위치
 
     [Header("Audio Clips")]
-    public AudioClip                    audioClipTakeOutWeapon; // 무기 장착 사운드
-    public AudioClip                    audioClipFire;          // 공격 사운드
-    public AudioClip                    audioClipReload;        // 재장전 사운드
+    public AudioClip audioClipTakeOutWeapon; // 무기 장착 사운드
+    public AudioClip audioClipFire;          // 공격 사운드
+    public AudioClip audioClipReload;        // 재장전 사운드
 
     [Header("Aim UI")]
-    public Image                        imageAim;               // default / aim 모드에 따라 Aim 이미지 활성 / 비활성
+    public Image imageAim;               // default / aim 모드에 따라 Aim 이미지 활성 / 비활성
 
-    private bool                        isModeChange = false;   // 모드 전환 여부 체크용
-    private float                       defaultModeFOV = 60;    // 기본모드에서 카메라 FOV
-    private float                       aimModeFOV = 30;        // AIM모드에서의 카메라 FOV
+    private bool isModeChange = false;   // 모드 전환 여부 체크용
+    private float defaultModeFOV = 60;    // 기본모드에서 카메라 FOV
+    private float aimModeFOV = 30;        // AIM모드에서의 카메라 FOV
 
 
-    private CasingMemoryPool            casingMemoryPool;       // 탄피 생성 후 활성 / 비활성 관리
-    private ImpactMemoryPool            impactMemoryPool;       // 공격 효과 생성 후 활성 / 비활성 관리
-    private Camera                      mainCamera;             // 광선 발사
+    private CasingMemoryPool casingMemoryPool;       // 탄피 생성 후 활성 / 비활성 관리
+    private ImpactMemoryPool impactMemoryPool;       // 공격 효과 생성 후 활성 / 비활성 관리
+    private Camera mainCamera;             // 광선 발사
 
 
     // ※※※※※※※※※※ 외부에서 필요한 정보를 열람하기 위해 정의한 Get Property' s ※※※※※※※※※※
-    public int        CurrentMagazine => weaponSetting.currentMagazine;
-    public int        MaxMagazine => weaponSetting.maxMagazine;
+    public int CurrentMagazine => weaponSetting.currentMagazine;
+    public int MaxMagazine => weaponSetting.maxMagazine;
 
     // ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
 
@@ -101,7 +102,7 @@ public class WeaponAssaultRifle : WeaponBase
             if (isAttack == true) return;
 
             StartCoroutine("OnModeChange");
-        }    
+        }
     }
 
     public override void StopWeaponAction(int type = 0)
@@ -137,6 +138,14 @@ public class WeaponAssaultRifle : WeaponBase
 
     public void OnAttack()
     {
+        HeatWeapon();
+
+        if (heatingValue > 99.9 && IsOnOverHeat == false)
+        {
+            IsOnOverHeat = true;
+            StartCoroutine("DeactiveOverHEeat");
+        }
+
         if (Time.time - lastAttackTime > weaponSetting.attackRate)
         {
             // 뛰고있을 때는 공격할 수 없다.
@@ -206,7 +215,7 @@ public class WeaponAssaultRifle : WeaponBase
         // 총구를 시작지점으로 하여 Raycast 연산
         Vector3 attackDirection = (targetPoint - bulletSpawnPoint.position).normalized;
 
-        if ( Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance))
+        if (Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance))
         {
             impactMemoryPool.SpawnImpact(hit);
 
@@ -231,7 +240,7 @@ public class WeaponAssaultRifle : WeaponBase
         float percent = 0;
         float time = 0.35f;
 
-        animator.AimModeIs = !animator.AimModeIs; 
+        animator.AimModeIs = !animator.AimModeIs;
         imageAim.enabled = !imageAim.enabled;
 
         float start = mainCamera.fieldOfView;
@@ -239,7 +248,7 @@ public class WeaponAssaultRifle : WeaponBase
 
         isModeChange = true;
 
-        while ( percent < 1)
+        while (percent < 1)
         {
             current += Time.deltaTime;
             percent = current / time;
@@ -263,43 +272,18 @@ public class WeaponAssaultRifle : WeaponBase
         muzzleFlashEffect.SetActive(false);
     }
 
-    //private IEnumerator OnReload()
-    //{
-    //    isReload = true;
-
-    //    // 재장전 애니메이션, 사운드 재생
-    //    animator.OnRelaod();
-    //    PlaySound(audioClipReload);
-
-    //    while(true)
-    //    {
-    //        // 사운드가 재생중이 아니고, 현재 애니메이션이 Movement이면
-    //        // 재장전 애니메이션(, 사운드) 재생이 종료되었따는 뜻
-    //        if (audioSource.isPlaying == false && animator.CurrentAnimationIs("Movement"))
-    //        {
-    //            isReload = false;
-
-    //            // 현재 탄창 수를 1 감소시키고, 바뀐 탄창 정보를 Text UI에 업데이트
-    //            weaponSetting.currentMagazine--;
-    //            onMagazineEvent.Invoke(weaponSetting.currentMagazine);
-
-    //            // 현재 탄 수를 최대로 설정하고, 바뀐 탄 수 정보를 Text UI에 업데이트
-    //            weaponSetting.currentAmmo = weaponSetting.maxAmmo;
-    //            onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
-
-    //            yield break; 
-    //        }
-
-    //        yield return null;
-    //    }
-
-    //}
-
     private void ResetVariables()
     {
         isReload = false;
         isAttack = false;
         isModeChange = false;
+    }
+
+    private IEnumerator DeactiveOverHEeat()
+    {
+        yield return new WaitForSeconds(DisableWeaponTime);
+
+        IsOnOverHeat = false;
     }
 
 }

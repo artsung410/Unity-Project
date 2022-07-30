@@ -6,39 +6,48 @@ using TMPro;
 
 public class PlayerHUD : MonoBehaviour
 {
-    public WeaponBase   weapon;             // 현재 정보가 출력되는 무기
+    public WeaponBase weapon;             // 현재 정보가 출력되는 무기
 
     [Header("Components")]
     [SerializeField]
-    private Status              status;             // 플레이어의 상태 (이동속도, 체력)
+    private Status status;             // 플레이어의 상태 (이동속도, 체력)
 
     [Header("Weapon Base")]
-    public TextMeshProUGUI      textWeaponName;     // 무기 이름
-    public Image                imageWeaponIcon;    // 무기 아이콘
-    public Sprite[]             spriteWeaponIcons;  // 무기 아이콘에 사용되는 sprite 배열
+    public TextMeshProUGUI textWeaponName;     // 무기 이름
+    public Image imageWeaponIcon;    // 무기 아이콘
+    public Sprite[] spriteWeaponIcons;  // 무기 아이콘에 사용되는 sprite 배열
     [SerializeField]
-    private Vector2[]           sizeWeaponIcons;    // 무기 아이콘의 UI 크기 배열
+    private Vector2[] sizeWeaponIcons;    // 무기 아이콘의 UI 크기 배열
 
     [Header("HP & BloodScreen UI")]
     [SerializeField]
-    private TextMeshProUGUI     textHP;             // 플레이어의 체력을 출력하는 Text
+    private TextMeshProUGUI textHP;             // 플레이어의 체력을 출력하는 Text
     [SerializeField]
-    private Image               imageBloodScreen;   // 플레이어가 공격받았을 대 화면에 표시되는 Image
+    private Image imageBloodScreen;   // 플레이어가 공격받았을 대 화면에 표시되는 Image
     [SerializeField]
-    private AnimationCurve      curveBloodScreen;
+    private AnimationCurve curveBloodScreen;
 
     [SerializeField]
-    private Image hpbar;
+    private Image hpBar;
+
+
+    // overHeat관련
+    [SerializeField]
+    private Image overheatBar;
+
+    [SerializeField]
+    private GameObject exceptionMark;
 
     private void Awake()
     {
         status.onHPEvent.AddListener(UpdateHPHUD);
+        weapon.onOverHeatEvent.AddListener(UpdateOverHeatHUD);
     }
 
     public void SetupAllWeapons(WeaponBase[] weapons)
     {
         //SetupMagazine();
-        
+
         // 사용 가능한 모든 무기의 이벤트 등록
 
         //for (int i = 0; i < weapons.Length; ++i)
@@ -63,58 +72,31 @@ public class PlayerHUD : MonoBehaviour
         imageWeaponIcon.rectTransform.sizeDelta = sizeWeaponIcons[(int)weapon.WeaponName];
     }
 
-    //private void UpdateAmmoHUD(int currentAmmo, int maxAmmo)
-    //{
-    //    textAmmo.text = $"<size=40>{currentAmmo} / </size>{maxAmmo}";
-    //}
-
-    //private void SetupMagazine()
-    //{
-    //    // weapon에 등록되어 있는 최대 탄창 개수만큼 Image Icon을 생성
-    //    // magazineParent 오브젝트의 자식으로 등록 후 모두 비활성화/리스트에 저장
-    //    magazineList = new List<GameObject>();
-    //    for (int i = 0; i < maxMagazineCount; ++i)
-    //    {
-    //        GameObject clone = Instantiate(magazineUIPrefab);
-    //        clone.transform.SetParent(magazineParent);
-    //        clone.SetActive(false);
-
-    //        magazineList.Add(clone);
-    //    }
-
-    //    // weapon에 등록되어 있는 현재 탄창 개수만큼 오브젝트 활성화
-    //    for (int i = 0; i < weapon.CurrentMagazine; ++i)
-    //    {
-    //        magazineList[i].SetActive(true);
-    //    }
-    //}
-
-    //private void UpdateMagazineHUD(int currentMagazine)
-    //{
-    //    // 전부 비활성화하고, currentMagazine 개수만큼 활성화
-    //    for ( int i = 0; i < magazineList.Count; ++i )
-    //    {
-    //        magazineList[i].SetActive(false);
-    //    }
-
-    //    for ( int i = 0; i < currentMagazine; ++i )
-    //    {
-    //        magazineList[i].SetActive(true);
-    //    }
-    //}
-
     void UpdateHPHUD(int previous, int current)
     {
-        hpbar.fillAmount = current / 100f;
+        hpBar.fillAmount = current / 100f;
         textHP.text = string.Format("                                       HP {0} / 100", current);
 
         // 체력이 증가했을 때는 화면에 빨간색 이미지를 출력하지 않도록 return
         if (previous <= current) return;
 
-        if ( previous - current > 0)
+        if (previous - current > 0)
         {
             StopCoroutine("OnBloodScreen");
             StartCoroutine("OnBloodScreen");
+        }
+    }
+
+    void UpdateOverHeatHUD(float HeatCount)
+    {
+        overheatBar.fillAmount = HeatCount / 100f;
+        if (weapon.IsOnOverHeat)
+        {
+            exceptionMark.SetActive(true);
+        }
+        else
+        {
+            exceptionMark.SetActive(false);
         }
     }
 

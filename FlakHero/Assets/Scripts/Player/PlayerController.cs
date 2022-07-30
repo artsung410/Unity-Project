@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         UpdateRotate();
         UpdateMove();
         UpdateJump();
+
         UpdateWeaponAction();
     }
 
@@ -102,9 +103,17 @@ public class PlayerController : MonoBehaviour
 
     void UpdateWeaponAction()
     {
+        if (Weapon.IsOnOverHeat == false)
+        {
+            Weapon.AircoolingWeapon();
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
-            Weapon.StartWeaponAction();
+            if (Weapon.IsOnOverHeat == false)
+            {
+                Weapon.StartWeaponAction();
+            }
         }
 
         else if (Input.GetMouseButtonUp(0))
@@ -114,18 +123,16 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            Weapon.StartWeaponAction(1);
+            if (Weapon.IsOnOverHeat == false)
+            {
+                Weapon.StartWeaponAction(1);
+            }
         }
 
         else if (Input.GetMouseButtonUp(1))
         {
             Weapon.StopWeaponAction(1);
         }
-
-        //if (Input.GetKeyDown(keyCodeReload))
-        //{
-        //    Weapon.StartReload();
-        //}
     }
 
     public void TakeDamage(int damage)

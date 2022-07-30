@@ -5,6 +5,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class HPEvent : UnityEngine.Events.UnityEvent<int, int> { }
 
+
 public class Status : MonoBehaviour
 {
     [HideInInspector]
@@ -26,9 +27,12 @@ public class Status : MonoBehaviour
     public int CurrentHP => currentHP;
     public int MaxHP => maxHP;
 
+    private WeaponAssaultRifle rifle;
+
     private void Awake()
     {
         currentHP = maxHP;
+        rifle = GetComponentInChildren<WeaponAssaultRifle>();
     }
 
     public bool DecreaseHP(int damage)
@@ -38,8 +42,6 @@ public class Status : MonoBehaviour
         currentHP = currentHP - damage > 0 ? currentHP - damage : 0;
 
         onHPEvent.Invoke(previousHP, currentHP);
-
-        GameManager.Instance.CurrentHp = previousHP;
 
         if ( currentHP == 0)
         {

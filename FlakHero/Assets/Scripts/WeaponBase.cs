@@ -9,6 +9,10 @@ public class AmmoEvent : UnityEngine.Events.UnityEvent<int, int> { }
 [System.Serializable]
 public class MagazineEvent : UnityEngine.Events.UnityEvent<int> { }
 
+[System.Serializable]
+public class OverHeatEvent : UnityEngine.Events.UnityEvent<float> { }
+
+
 public abstract class WeaponBase : MonoBehaviour
 {
     [Header("WeaponBase")]
@@ -33,7 +37,21 @@ public abstract class WeaponBase : MonoBehaviour
     [HideInInspector]
     public MagazineEvent magazineEvent = new MagazineEvent();
 
+    [HideInInspector]
+    public OverHeatEvent onOverHeatEvent = new OverHeatEvent();
+
     // ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+
+    // overHat 관리
+
+    public float heatingValue = 0;
+
+    public int OverHeatMaxCount = 100;
+
+    public bool IsOnOverHeat = false;
+
+    public float DisableWeaponTime = 3f;
+
 
     // 외부에서 필요한 정보를 열람하기 위해 정의한 Get Property's
     public PlayerAnimatorController Animator => animator;
@@ -57,5 +75,19 @@ public abstract class WeaponBase : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<PlayerAnimatorController>();
+    }
+
+    public void AircoolingWeapon()
+    {
+        heatingValue -= 0.2f;
+        heatingValue = Mathf.Clamp(heatingValue, 0, OverHeatMaxCount);
+        onOverHeatEvent.Invoke(heatingValue);
+    }
+
+    public void HeatWeapon()
+    {
+        heatingValue += 0.5f;
+        heatingValue = Mathf.Clamp(heatingValue, 0, OverHeatMaxCount);
+        onOverHeatEvent.Invoke(heatingValue);
     }
 }

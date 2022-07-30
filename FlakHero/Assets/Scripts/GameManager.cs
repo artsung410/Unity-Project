@@ -45,8 +45,8 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     public int ScoreIncreaseAmount = 50;
 
-    public int CurrentHp = 100;
 
+    // 터렛 설치 관리 
     public bool[] IsAutoTurretOnWorld = new bool[4];
 
     [HideInInspector]
