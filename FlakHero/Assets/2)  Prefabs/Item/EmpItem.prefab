@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 77865098474007377}
   m_Layer: 0
   m_Name: EmpItem
-  m_TagString: Emp
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,10 +245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ad356667e837f48931b8134491ade8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmpEffectPrefeb: {fileID: 155548, guid: d50f5f5d5a171443fa76bc1f6fc90473, type: 3}
   moveDistance: 0.2
   pingpongSpeed: 0.5
   rotateSpeed: 50
+  EmpPrefab: {fileID: 6780269618438364975, guid: d6837182639e5904a871797b1ef55b5e, type: 3}
 --- !u!135 &77865098474007377
 SphereCollider:
   m_ObjectHideFlags: 0

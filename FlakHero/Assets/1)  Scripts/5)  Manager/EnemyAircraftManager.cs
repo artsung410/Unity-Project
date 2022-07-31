@@ -14,21 +14,11 @@ public class EnemyAircraftManager : MonoBehaviour
     //private MemoryPool enemyMemoryPoolA;         // 카미카제 비행기 활성 / 비활성 관리
     //private MemoryPool enemyMemoryPoolB;         // 미사일 폭격기 활성 / 비활성 관리
 
-    private EnemySpawnBoxPool spawnerPool;
-    private KamikazeAircraftPool enemy_A_Pool;
-    private MissileAircraftPool enemy_B_Pool;
-    private EnemyMissile missilePool;
-
     private int numberOfEnemiesSpawnedAtOnce = 1; // 동시에 생성되는 적의 숫자
     private Vector2Int mapSize = new Vector2Int(100, 100); // 맵 크기
 
     private void Awake()
     {
-        spawnerPool = new EnemySpawnBoxPool();
-        enemy_A_Pool = new KamikazeAircraftPool();
-        enemy_B_Pool = new MissileAircraftPool();
-        missilePool = new EnemyMissile();
-
         StartCoroutine("SpawnTile");
     }
 

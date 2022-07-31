@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 4539852087433524123}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,10 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d959cf00c186644d847d0f91ded8d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flightSpeed: 10
   target: {fileID: 0}
   explosionPrefab: {fileID: 6883561620270123213, guid: 7d4ea6824b17d02408362c052d85a698, type: 3}
+  flightSpeed: 10
   explosionDelayTime: 0.1
+  searchTime: 2
   explosionRadius: 10
   explosionForce: 1000
   IsSreachedPlayer: 0

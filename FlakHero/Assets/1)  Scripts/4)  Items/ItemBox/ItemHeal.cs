@@ -2,24 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemEmp : ItemBase
+public class ItemHeal : ItemBase
 {
-    public  GameObject  EmpEffectPrefeb;
-    public  float       moveDistance = 0.2f;
-    public  float       pingpongSpeed = 0.5f;
-    public  float       rotateSpeed = 50;
-    public  bool        isActiveEmp;
+    public  GameObject  hpEffectPrefeb;
 
-    private void Awake()
-    {
-        isActiveEmp = false;
-    }
+    public int        increaseHP        = 50;
+    public float      moveDistance      = 0.2f;
+    public float      pingpongSpeed     = 0.5f;
+    public float      rotateSpeed       = 50;
 
     private IEnumerator Start()
     {
         float y = transform.position.y;
 
-        while (true)
+        while ( true )
         {
             // y축을 기준으로 회전
             transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
@@ -36,13 +32,11 @@ public class ItemEmp : ItemBase
     // 아이템을 획득했을 때 호출되는 함수.
     public override void Use(GameObject entity)
     {
-        isActiveEmp = true;
-
         GameManager.Instance.AddScore();
 
-        GameObject particle = Instantiate(EmpEffectPrefeb, transform.position, Quaternion.identity);
+        entity.GetComponent<Status>().IncreaseHP(increaseHP);
 
-        Destroy(particle.gameObject, 4f);
+        Instantiate(hpEffectPrefeb, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }

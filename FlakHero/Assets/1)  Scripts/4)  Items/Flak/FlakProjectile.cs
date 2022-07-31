@@ -12,7 +12,17 @@ public class FlakProjectile : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * Speed);
+        Transform target = GameManager.Instance.realTimeTarget;
+
+        if (target != null)
+        {
+            Vector3 to = target.transform.position;
+            Vector3 from = transform.position;
+            Vector3 dir = to - from;
+
+            transform.rotation = Quaternion.LookRotation(dir);
+            transform.Translate(Vector3.forward * Time.deltaTime * Speed);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

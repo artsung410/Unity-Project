@@ -8,6 +8,11 @@ public class Flak : MonoBehaviour
     public  GameObject  FlakHead;
     public  GameObject  target;
     public  Transform   BulletSpawnPoint;
+    private AudioSource audioSource;
+    public  AudioClip   audioClipInitFlak;   // 포탑 생성 소리
+    public  AudioClip   audioClipProjectile; // 포탄 발사 소리
+
+
 
     // 1, 2, 3, 4 분면
     int[] dx =      { 10, -10, -10, 10 };
@@ -18,10 +23,17 @@ public class Flak : MonoBehaviour
     public  float   LifeTime = 1f;
     private bool    isReadyToLaunch = false;
 
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        
+    }
+
     private void Start()
     {
-        StartCoroutine("BulletSpawn");
-
+        PlaySound(audioClipInitFlak);
+        StartCoroutine("ProjectileSpawn");
         do
         {
             randomPos = Random.Range(0, 4);
@@ -70,16 +82,18 @@ public class Flak : MonoBehaviour
         {
             target = other.gameObject;
             isReadyToLaunch = true;
+            GameManager.Instance.realTimeTarget = target.transform;
 
             if (other.gameObject.activeSelf == false)
             {
                 isReadyToLaunch = false;
-                StopCoroutine("BulletSpawn");
+                GameManager.Instance.realTimeTarget = null;
+                StopCoroutine("ProjectileSpawn");
             }
         }
     }
 
-    IEnumerator BulletSpawn()
+    IEnumerator ProjectileSpawn()
     {
         while (true)
         {
@@ -87,17 +101,25 @@ public class Flak : MonoBehaviour
 
             if (isReadyToLaunch && target.activeSelf != false)
             {
+                PlaySound(audioClipProjectile);
                 FlakProjectile projectile = FlakProjectilePool.GetObject();
                 projectile.transform.position = BulletSpawnPoint.position;
                 projectile.transform.rotation = BulletSpawnPoint.rotation;
-                StartCoroutine(DeActiveBullet(projectile));
+                StartCoroutine(DeActiveProjectile(projectile));
             }
         }
     }
 
-    IEnumerator DeActiveBullet(FlakProjectile projectile)
+    IEnumerator DeActiveProjectile(FlakProjectile projectile)
     {
         yield return new WaitForSeconds(LifeTime);
         FlakProjectilePool.ReturnObject(projectile);
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        audioSource.Stop();         
+        audioSource.clip = clip;    
+        audioSource.Play();         
     }
 }

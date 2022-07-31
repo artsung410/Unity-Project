@@ -45,7 +45,12 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     public int ScoreIncreaseAmount = 50;
 
-    public int TurretCount = 0;
+
+    // 磐房 包访 
+    const int maxFlakCount = 4;
+    public bool[] IsAutoTurretOnWorld = new bool[maxFlakCount];
+    public int FlakCount = 0;
+    public Transform realTimeTarget;
 
     [HideInInspector]
     public int CurrentScore
@@ -86,11 +91,4 @@ public class GameManager : SingletonBehaviour<GameManager>
         currentScore = 0;
         isEnd = false;
     }
-
-    // 磐房 汲摹 包府 
-    const int maxTurretCount = 4;
-    public bool[] IsAutoTurretOnWorld = new bool[maxTurretCount];
-
-
-
 }

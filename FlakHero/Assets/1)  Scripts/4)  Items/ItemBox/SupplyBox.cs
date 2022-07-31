@@ -26,13 +26,13 @@ public class SupplyBox : MonoBehaviour
 
     private void Start()
     {
-        int flakCount = GameManager.Instance.TurretCount;
+        int flakCount = GameManager.Instance.FlakCount;
 
         randNum = (flakCount == 4) ? Random.Range(0, 3) : Random.Range(0, 4);
 
         if (randNum == 3)
         {
-            ++GameManager.Instance.TurretCount;
+            ++GameManager.Instance.FlakCount;
         }
     }
 

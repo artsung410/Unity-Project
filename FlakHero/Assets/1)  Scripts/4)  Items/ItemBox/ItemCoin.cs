@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemHeal : ItemBase
+public class ItemCoin : ItemBase
 {
-    [SerializeField]
-    private GameObject hpEffectPrefeb;
-
-    [SerializeField]
-    private int increaseHP = 50;
-
     [SerializeField]
     private float moveDistance = 0.2f;
 
@@ -18,6 +12,16 @@ public class ItemHeal : ItemBase
 
     [SerializeField]
     private float rotateSpeed = 50;
+    
+    public GameObject meshBody;
+    private AudioSource   audioSource;
+    public  AudioClip     coinSound;
+    private bool          isGetCoin = false;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private IEnumerator Start()
     {
@@ -37,16 +41,21 @@ public class ItemHeal : ItemBase
         }
     }
 
-    // 아이템을 획득했을 때 호출되는 함수.
     public override void Use(GameObject entity)
     {
-        GameManager.Instance.AddScore();
-
-        entity.GetComponent<Status>().IncreaseHP(increaseHP);
-
-        Instantiate(hpEffectPrefeb, transform.position, Quaternion.identity);
-
-        Destroy(gameObject);
+        if (isGetCoin == false)
+        {
+            GameManager.Instance.AddScore();
+            playSound(coinSound);
+            meshBody.SetActive(false);
+            Destroy(gameObject, 3f);
+            isGetCoin = true;
+        }
     }
 
+    private void playSound(AudioClip sound)
+    {
+        audioSource.clip = sound;
+        audioSource.Play();
+    }
 }

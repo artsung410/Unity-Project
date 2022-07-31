@@ -60,7 +60,7 @@ public class EnemyMissile : MonoBehaviour
         }
     }
 
-    private IEnumerator ExplodeMissile()
+    public IEnumerator ExplodeMissile()
     {
         yield return new WaitForSeconds(explosionDelayTime);
 
