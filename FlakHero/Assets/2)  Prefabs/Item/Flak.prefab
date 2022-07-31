@@ -1473,6 +1473,7 @@ GameObject:
   - component: {fileID: 6088047245679666858}
   - component: {fileID: 7154857651531966520}
   - component: {fileID: 2970163280851143973}
+  - component: {fileID: 2868910711230920353}
   m_Layer: 0
   m_Name: Flak
   m_TagString: Untagged
@@ -1509,14 +1510,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00820fb4be1ba64ea747110e3eaea41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ProjectilePrefab: {fileID: 4009904016816679044, guid: 0e909217e7d8bad4ea0ebf698481cc97, type: 3}
+  FlakInitEffect: {fileID: 5113463650391803225, guid: efe1aff149ac32d479ca0d0782823e49, type: 3}
+  FlakHead: {fileID: 5797014644031712535}
+  target: {fileID: 0}
+  BulletSpawnPoint: {fileID: 6827796887240447444}
   randomPos: 0
   SpawnCoolTime: 2
   LifeTime: 1
-  ProjectilePrefab: {fileID: 4009904016816679044, guid: 0e909217e7d8bad4ea0ebf698481cc97, type: 3}
-  FlakInitEffect: {fileID: 5113463650391803225, guid: efe1aff149ac32d479ca0d0782823e49, type: 3}
-  BulletSpawnPoint: {fileID: 6827796887240447444}
-  FlakHead: {fileID: 5797014644031712535}
-  target: {fileID: 0}
 --- !u!135 &2970163280851143973
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1530,6 +1531,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 50
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2868910711230920353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000735323440191232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 999f5b5d83d00b2499dc36a32fd2e6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlakProjectilePrefab: {fileID: 4009904016816679044, guid: 0e909217e7d8bad4ea0ebf698481cc97, type: 3}
 --- !u!1 &8116360069396162605
 GameObject:
   m_ObjectHideFlags: 0

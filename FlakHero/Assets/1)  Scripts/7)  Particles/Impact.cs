@@ -5,7 +5,7 @@ using UnityEngine;
 public class Impact : MonoBehaviour
 {
     private ParticleSystem  particle;
-    private MemoryPool      memoryPool;
+    private ImpactPool      Pool;
 
     //private void Start()
     //{
@@ -18,9 +18,9 @@ public class Impact : MonoBehaviour
     }
 
     // 타격이펙트는 삭제하지 않고 메모리풀로 관리를 한다.
-    public void Setup(MemoryPool pool)
+    public void Setup(ImpactPool pool)
     {
-        memoryPool = pool;
+        Pool = pool;
     }
 
     private void Update()
@@ -28,7 +28,7 @@ public class Impact : MonoBehaviour
         // 파티클이 재생중이 아니면 삭제
         if ( particle.isPlaying == false)
         {
-            memoryPool.DeactivatePoolItem(gameObject);
+            ImpactPool.ReturnObject(this);
         }
     }
 }

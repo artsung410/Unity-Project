@@ -90,7 +90,6 @@ public class WeaponSwitchSystem : MonoBehaviour
 
         // 현재 삿용하는 무기 활성화
         currentWeapon.gameObject.SetActive(true);
-
     }
 
 }

@@ -10,8 +10,6 @@ public class EmpColider : MonoBehaviour
     {
         if (other.CompareTag("Enemy") && isActiveEmp == true)
         {
-            Debug.Log("Àû °¨Áö");
-
             StartCoroutine(other.GetComponent<EnemyAircraft>().ExplodeAircraft());
 
             GameManager.Instance.AddScore();

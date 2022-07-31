@@ -12,18 +12,13 @@ public class Casing : MonoBehaviour
 
     private Rigidbody rigidbody3D;
     private AudioSource audioSource;
-    private MemoryPool memoryPool;
+    private CasingPool Pool;
 
-    //private void Start()
-    //{
-    //    Destroy(gameObject, 3f);
-    //}
-
-    public void Setup(MemoryPool pool, Vector3 direction)
+    public void Setup(CasingPool pool, Vector3 direction)
     {
         rigidbody3D = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-        memoryPool = pool;
+        Pool = pool;
 
         // 탄피의 이동 속력과 회전 속력 설정
         rigidbody3D.velocity = new Vector3(direction.x, 1.0f, direction.z);
@@ -35,7 +30,7 @@ public class Casing : MonoBehaviour
         StartCoroutine("DeactivateAfterTime");
     }
 
-    private void OnColiisionEnter(Collision collision)
+    private void OnCollisionEnter (Collision collision)
     {
         // 여러개의 탄피 사운드 중 임의의 사운드 선택
         int index = Random.Range(0, audioClips.Length);
@@ -47,6 +42,6 @@ public class Casing : MonoBehaviour
     {
         yield return new WaitForSeconds(deactivateTime);
 
-        memoryPool.DeactivatePoolItem(this.gameObject);
+        CasingPool.ReturnObject(this);
     }
 }

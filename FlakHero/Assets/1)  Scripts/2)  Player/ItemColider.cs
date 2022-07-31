@@ -23,11 +23,11 @@ public class ItemColider : MonoBehaviour
 
             empColider.isActiveEmp = true;
 
-            StartCoroutine("onEmp");
+            StartCoroutine("OnAndDeactiveEmp");
         }
     }
 
-    private IEnumerator onEmp()
+    private IEnumerator OnAndDeactiveEmp()
     {
         yield return new WaitForSeconds(3f);
 

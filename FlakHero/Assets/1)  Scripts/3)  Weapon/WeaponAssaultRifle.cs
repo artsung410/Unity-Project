@@ -20,8 +20,8 @@ public class WeaponAssaultRifle : WeaponBase
     [Header("Aim UI")]
     public      Image                   imageAim;               // default / aim 모드에 따라 Aim 이미지 활성 / 비활성
 
-    private     CasingMemoryPool        casingMemoryPool;       // 탄피 오브젝트 풀
-    private     ImpactMemoryPool        impactMemoryPool;       // 공격 효과 생성 후 활성 / 비활성 관리
+    private     CasingPool        casingMemoryPool;       // 탄피 오브젝트 풀
+    private     ImpactPool        impactMemoryPool;       // 공격 효과 생성 후 활성 / 비활성 관리
     private     Camera                  mainCamera;             // 광선 발사
 
     private     bool                    isModeChange = false;   // 모드 전환 여부 체크용
@@ -33,8 +33,8 @@ public class WeaponAssaultRifle : WeaponBase
     {
         // 기반 클래스의 초기화를 위한 Setup() 메소드 호출
         base.Setup();
-        casingMemoryPool = GetComponent<CasingMemoryPool>();
-        impactMemoryPool = GetComponent<ImpactMemoryPool>();
+        casingMemoryPool = GetComponent<CasingPool>();
+        impactMemoryPool = GetComponent<ImpactPool>();
         mainCamera = Camera.main;
 
         //// 처음 탄창 수는 최대로 설정
