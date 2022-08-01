@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e4a2f64ee018040ae956dda636f3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExplosionPrefab: {fileID: 1427962332153456, guid: 301583a5af63a494298d60cd9f296909, type: 3}
   Speed: 30
   bulletDamage: 50
 --- !u!1 &7662037698087214523

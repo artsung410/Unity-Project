@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class FlakProjectile : MonoBehaviour
 {
+    public GameObject ExplosionPrefab;
+
     [SerializeField]
     private float Speed = 20f; // ºñÇà ½ºÇÇµå
 
@@ -30,6 +32,7 @@ public class FlakProjectile : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponent<EnemyAircraft>().TakeDamage(bulletDamage);
+            Instantiate(ExplosionPrefab, transform.position, transform.rotation);
             gameObject.SetActive(false);
         }
     }

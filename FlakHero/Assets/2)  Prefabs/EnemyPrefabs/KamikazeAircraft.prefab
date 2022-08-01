@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b7599df801f09409025a782380c8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 6883561620270123213, guid: 7d4ea6824b17d02408362c052d85a698, type: 3}
+  explosionPrefab: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
   SupplyBoxPrefab: {fileID: 5143383603307160316, guid: b6a8755b35a02e540a96b7c6b5c42377, type: 3}
   explosionRadius: 10
   explosionForce: 1000

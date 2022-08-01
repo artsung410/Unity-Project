@@ -6,7 +6,6 @@ public class EnemyMissile : MonoBehaviour
 {
     [Header("Missile")]
     public  GameObject  target;                             
-    public  GameObject  explosionPrefab;
     public  float       flightSpeed         = 10f;          
     public  float       explosionDelayTime  = 0.1f;
     public  float       searchTime          = 2f;
@@ -64,9 +63,7 @@ public class EnemyMissile : MonoBehaviour
     {
         yield return new WaitForSeconds(explosionDelayTime);
 
-        // 폭발 이펙트 생성
-        Bounds bounds = GetComponent<Collider>().bounds;
-        Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
+        OnExplosion();
 
         //// 폭발 범위에 있는 모든 오브젝트의 collider 정보를 받아와 폭발 효과 처리
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
@@ -88,13 +85,19 @@ public class EnemyMissile : MonoBehaviour
     {
         yield return new WaitForSeconds(searchTime);
 
-        // 폭발 이펙트 생성
-        Bounds bounds = GetComponent<Collider>().bounds;
-        Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
+        OnExplosion();
 
         if (gameObject != null)
         {
             gameObject.SetActive(false);
         }
+    }
+
+    void OnExplosion()
+    {
+        Bounds bounds = GetComponent<Collider>().bounds;
+        var obj = ProjectileExplosionPool.GetObject();
+        obj.transform.position = new Vector3(bounds.center.x, bounds.min.y, bounds.center.z);
+        obj.transform.rotation = transform.rotation;
     }
 }

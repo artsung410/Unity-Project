@@ -5,7 +5,6 @@ using UnityEngine;
 public abstract class EnemyAircraft : MonoBehaviour
 {
     [Header("EnemyAircraft")]
-    public      GameObject      explosionPrefab;
     public      GameObject      SupplyBoxPrefab;
     public      float           explosionRadius = 10.0f;
     public      float           explosionForce = 1000.0f;
@@ -20,9 +19,7 @@ public abstract class EnemyAircraft : MonoBehaviour
         // 근처의 전투기가 터져서 다시 현재 전투기를 터트리려고 할 때(StackOverflow 방지)
         isExplode = true;
 
-        // 폭발 이펙트 생성
-        Bounds bounds = GetComponent<Collider>().bounds;
-        Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
+        OnExplosion();
 
         //// 폭발 범위에 있는 모든 오브젝트의 collider 정보를 받아와 폭발 효과 처리
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
@@ -36,7 +33,7 @@ public abstract class EnemyAircraft : MonoBehaviour
                 continue;
             }
         }
-
+       
         gameObject.SetActive(false);
 
         yield return null;
@@ -64,5 +61,13 @@ public abstract class EnemyAircraft : MonoBehaviour
     {
         GameObject item = Instantiate(SupplyBoxPrefab, transform.position, SupplyBoxPrefab.transform.rotation);
         item.SetActive(true);
+    }
+
+    void OnExplosion()
+    {
+        Bounds bounds = GetComponent<Collider>().bounds;
+        var obj = EnemyExplosionPool.GetObject();
+        obj.transform.position = new Vector3(bounds.center.x, bounds.min.y, bounds.center.z);
+        obj.transform.rotation = transform.rotation;
     }
 }
