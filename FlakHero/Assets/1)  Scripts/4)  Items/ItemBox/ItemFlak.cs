@@ -39,8 +39,13 @@ public class ItemFlak : ItemBase
     {
         GameManager.Instance.AddScore();
 
-        Instantiate(FlakPrefeb);
+        int flakeCount = GameManager.Instance.calculateFlakCount();
+        int maxFlakCount = 4;
 
+        if (flakeCount < maxFlakCount)
+        {
+            Instantiate(FlakPrefeb);
+        }
 
         Destroy(gameObject);
     }

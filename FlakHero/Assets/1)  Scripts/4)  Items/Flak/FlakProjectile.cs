@@ -1,22 +1,22 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class FlakProjectile : MonoBehaviour
 {
     [SerializeField]
-    private float Speed = 20f; // ºñÇà ½ºÇÇµå
+    private float Speed = 20f; // ÂºÃ±Ã‡Ã  Â½ÂºÃ‡Ã‡ÂµÃ¥
 
     [SerializeField]
     int bulletDamage = 50;
 
     void Update()
     {
-        Transform target = GameManager.Instance.realTimeTarget;
+        Vector3 targetPos = GameManager.Instance.RealTargetPos;
+        Speed += Mathf.Pow(Time.deltaTime * 2f, 3);
 
-        if (target != null)
+        if (targetPos != null)
         {
-            Vector3 to = target.transform.position;
+            Vector3 to = targetPos;
             Vector3 from = transform.position;
             Vector3 dir = to - from;
 
@@ -30,6 +30,7 @@ public class FlakProjectile : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponent<EnemyAircraft>().TakeDamage(bulletDamage);
+            gameObject.SetActive(false);
         }
     }
 }

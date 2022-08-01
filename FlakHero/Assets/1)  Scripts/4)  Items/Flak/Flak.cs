@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class Flak : MonoBehaviour
 {
-    public  GameObject  FlakInitEffect;
-    public  GameObject  FlakHead;
-    public  GameObject  target;
-    public  Transform   BulletSpawnPoint;
+    public GameObject FlakInitEffect;
+    public GameObject FlakHead;
+    public GameObject FlakHeadChildren;
+    public GameObject target;
+    public Transform BulletSpawnPoint;
     private AudioSource audioSource;
-    public  AudioClip   audioClipInitFlak;   // 포탑 생성 소리
-    public  AudioClip   audioClipProjectile; // 포탄 발사 소리
+    public AudioClip audioClipInitFlak;   // 포탑 생성 소리
+    public AudioClip audioClipProjectile; // 포탄 발사 소리
 
 
 
     // 1, 2, 3, 4 분면
-    int[] dx =      { 10, -10, -10, 10 };
-    int[] dz =      { 10, 10, -10, -10 };
+    int[] dx = { 10, -10, -10, 10 };
+    int[] dz = { 10, 10, -10, -10 };
 
-    public  int     randomPos;
-    public  float   SpawnCoolTime = 2f;
-    public  float   LifeTime = 1f;
-    private bool    isReadyToLaunch = false;
+    public int randomPos;
+    public float SpawnCoolTime = 2f;
+    public float ProjectileLifeTime = 1f;
+    private bool isReadyToLaunch = false;
 
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        
+
     }
 
     private void Start()
@@ -37,7 +38,7 @@ public class Flak : MonoBehaviour
         do
         {
             randomPos = Random.Range(0, 4);
-            bool[] IsExistTurretsOnMap = GameManager.Instance.IsAutoTurretOnWorld;
+            bool[] IsExistTurretsOnMap = GameManager.Instance.IsFlakOnWorlds;
 
             if (false == IsExistTurretsOnMap[randomPos])
             {
@@ -47,7 +48,7 @@ public class Flak : MonoBehaviour
                 GameObject particle = Instantiate(FlakInitEffect, transform.position, Quaternion.identity);
                 Destroy(particle.gameObject, 1f);
 
-                GameManager.Instance.IsAutoTurretOnWorld[randomPos] = true;
+                GameManager.Instance.IsFlakOnWorlds[randomPos] = true;
                 break;
             }
 
@@ -61,18 +62,21 @@ public class Flak : MonoBehaviour
                 }
             }
 
-        } while (GameManager.Instance.IsAutoTurretOnWorld[randomPos]);
+        } while (GameManager.Instance.IsFlakOnWorlds[randomPos]);
     }
 
     private void Update()
     {
         if (target != null)
         {
+            GameManager.Instance.RealTargetPos = target.transform.position;
+
             Vector3 to = target.transform.position;
             Vector3 from = FlakHead.transform.position;
             Vector3 dir = to - from;
+            Vector3 newdir = new Vector3(dir.x, dir.y + 10, dir.z);
 
-            FlakHead.transform.rotation = Quaternion.LookRotation(dir);
+            FlakHead.transform.rotation = Quaternion.LookRotation(newdir);
         }
     }
 
@@ -81,15 +85,13 @@ public class Flak : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             target = other.gameObject;
-            isReadyToLaunch = true;
-            GameManager.Instance.realTimeTarget = target.transform;
 
-            if (other.gameObject.activeSelf == false)
-            {
-                isReadyToLaunch = false;
-                GameManager.Instance.realTimeTarget = null;
-                StopCoroutine("ProjectileSpawn");
-            }
+            isReadyToLaunch = true;
+            //if (other.gameObject.activeSelf == false)
+            //{
+            //    isReadyToLaunch = false;
+            //    StopCoroutine("ProjectileSpawn");
+            //}
         }
     }
 
@@ -102,6 +104,8 @@ public class Flak : MonoBehaviour
             if (isReadyToLaunch && target.activeSelf != false)
             {
                 PlaySound(audioClipProjectile);
+                StartCoroutine("SetAnimation");
+
                 FlakProjectile projectile = FlakProjectilePool.GetObject();
                 projectile.transform.position = BulletSpawnPoint.position;
                 projectile.transform.rotation = BulletSpawnPoint.rotation;
@@ -112,14 +116,22 @@ public class Flak : MonoBehaviour
 
     IEnumerator DeActiveProjectile(FlakProjectile projectile)
     {
-        yield return new WaitForSeconds(LifeTime);
+        yield return new WaitForSeconds(ProjectileLifeTime);
         FlakProjectilePool.ReturnObject(projectile);
     }
 
     private void PlaySound(AudioClip clip)
     {
-        audioSource.Stop();         
-        audioSource.clip = clip;    
-        audioSource.Play();         
+        audioSource.Stop();
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    IEnumerator SetAnimation()
+    {
+        Animator animator = FlakHeadChildren.GetComponent<Animator>();
+        animator.SetBool("FireOn", true);
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("FireOn", false);
     }
 }

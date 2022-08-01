@@ -26,14 +26,9 @@ public class SupplyBox : MonoBehaviour
 
     private void Start()
     {
-        int flakCount = GameManager.Instance.FlakCount;
+        int flakCount = GameManager.Instance.calculateFlakCount();
 
         randNum = (flakCount == 4) ? Random.Range(0, 3) : Random.Range(0, 4);
-
-        if (randNum == 3)
-        {
-            ++GameManager.Instance.FlakCount;
-        }
     }
 
     private void Awake()

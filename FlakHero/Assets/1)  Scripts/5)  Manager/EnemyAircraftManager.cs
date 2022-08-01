@@ -27,6 +27,8 @@ public class EnemyAircraftManager : MonoBehaviour
     // 최초에는 하나씩 생성되고 시간이 흐름에 따라 동시에 생성되는 숫자가 늘어난다.
     private IEnumerator SpawnTile()
     {
+        // 오브젝트 풀이 다 끝날때까지 시간을 지연시켜줌.
+        yield return new WaitForSeconds(1f);
         int currentNumber = 0;
         int maximumNumber = 50;
 

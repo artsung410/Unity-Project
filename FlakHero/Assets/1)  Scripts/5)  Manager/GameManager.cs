@@ -40,17 +40,14 @@ public class GameManager : SingletonBehaviour<GameManager>
     // 『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『
 
     private bool isEnd = false;
-
     private int currentScore = 0;
-
     public int ScoreIncreaseAmount = 50;
 
-
     // 斗型 淫恵 
-    const int maxFlakCount = 4;
-    public bool[] IsAutoTurretOnWorld = new bool[maxFlakCount];
-    public int FlakCount = 0;
-    public Transform realTimeTarget;
+    public const int maxFlakCount = 4;
+    public int flakCount;
+    public bool[] IsFlakOnWorlds = new bool[maxFlakCount];
+    public Vector3 RealTargetPos;
 
     [HideInInspector]
     public int CurrentScore
@@ -90,5 +87,20 @@ public class GameManager : SingletonBehaviour<GameManager>
     {
         currentScore = 0;
         isEnd = false;
+    }
+
+
+    public int calculateFlakCount()
+    {
+        flakCount = 0;
+        for (int i = 0; i < maxFlakCount; i++)
+        {
+            if (IsFlakOnWorlds[i] == true)
+            {
+                flakCount++;
+            }
+        }
+
+        return flakCount;
     }
 }
