@@ -59,20 +59,17 @@ public class ImpactPool : MonoBehaviour
         Instance.Q.Enqueue(obj);
     }
 
-    public void SpawnImpact(RaycastHit hit)
+    public static void SpawnImpact(RaycastHit hit)
     {
         OnSpawnImpact(hit.point, Quaternion.LookRotation(hit.normal));
     }
 
-    public void OnSpawnImpact(Vector3 position, Quaternion rotation)
+    public static void OnSpawnImpact(Vector3 position, Quaternion rotation)
     {
         Impact impact = ImpactPool.GetObject();
         impact.transform.position = position;
         impact.transform.rotation = rotation;
         impact.GetComponent<Impact>().Setup(Instance);
-
-        ParticleSystem.MainModule main = impact.GetComponent<ParticleSystem>().main;
-
     }
 }
 

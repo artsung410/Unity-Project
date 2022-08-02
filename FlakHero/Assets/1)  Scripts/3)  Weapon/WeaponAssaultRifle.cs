@@ -20,8 +20,6 @@ public class WeaponAssaultRifle : WeaponBase
     [Header("Aim UI")]
     public      Image                   imageAim;               // default / aim 모드에 따라 Aim 이미지 활성 / 비활성
 
-    private     CasingPool        casingMemoryPool;       // 탄피 오브젝트 풀
-    private     ImpactPool        impactMemoryPool;       // 공격 효과 생성 후 활성 / 비활성 관리
     private     Camera                  mainCamera;             // 광선 발사
 
     private     bool                    isModeChange = false;   // 모드 전환 여부 체크용
@@ -31,41 +29,19 @@ public class WeaponAssaultRifle : WeaponBase
 
     private void Awake()
     {
-        // 기반 클래스의 초기화를 위한 Setup() 메소드 호출
         base.Setup();
-        casingMemoryPool = GetComponent<CasingPool>();
-        impactMemoryPool = GetComponent<ImpactPool>();
         mainCamera = Camera.main;
-
-        //// 처음 탄창 수는 최대로 설정
-        //weaponSetting.currentMagazine = weaponSetting.maxMagazine;
-
-        //// 처음 탄 수는 최대로 설정
-        //weaponSetting.currentAmmo = weaponSetting.maxAmmo;
     }
 
     private void OnEnable()
     {
-        // 무기 장착 사운드 재생
         PlaySound(audioClipTakeOutWeapon);
-
-        // 총구 이펙트 오브젝트 비활성화
         muzzleFlashEffect.SetActive(false);
-
-        //// 무기가 활성화될 때 해당 무기의 탄창 정보를 갱신한다
-        //onMagazineEvent.Invoke(weaponSetting.currentMagazine);
-
-        //// 무기가 활성화될 때 해당 무기의 탄 수 정보를 갱신한다.
-        //onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
-
         ResetVariables();
     }
 
     public override void StartWeaponAction(int type = 0)
     {
-        // 재장전 중일 때는 무기 액션을 할 수 없다.
-        if (isReload == true) return;
-
         // 모드 전환중이면 무기 액션을 할 수 없다.
         if (isModeChange == true) return;
 
@@ -106,17 +82,6 @@ public class WeaponAssaultRifle : WeaponBase
         }
     }
 
-    public override void StartReload()
-    {
-        // 현재 재장전 중이면 재장전 불가능
-        if (isReload == true) return;
-
-        // 무기 액션 도중에 'R' 키를 눌러 재장전을 시도하면 무기 액션 종료 후 재장전
-        StopWeaponAction();
-
-        StartCoroutine("OnReload");
-    }
-
     private IEnumerator OnAttackLoop()
     {
         while (true)
@@ -137,7 +102,7 @@ public class WeaponAssaultRifle : WeaponBase
         if (heatingValue > 99.9 && IsOnOverHeat == false)
         {
             IsOnOverHeat = true;
-            StartCoroutine("DeactiveOverHEeat");
+            StartCoroutine("DeactiveOverHeat");
         }
 
         if (Time.time - lastAttackTime > weaponSetting.attackRate)
@@ -151,15 +116,6 @@ public class WeaponAssaultRifle : WeaponBase
             // 공격주기가 되어야 공격 할 수 있도록 하기 위해 현재 시간 저장
             lastAttackTime = Time.time;
 
-            // 탄 수가 없으면 공격 불가능
-            //if (weaponSetting.currentAmmo <= 0)
-            //{
-            //    return;
-            //}
-
-            // 공격시 currentAmmo 1 감소, 탄 수 UI 업데이트
-            //weaponSetting.currentAmmo--;
-            //onAmmoEvent.Invoke(weaponSetting.currentAmmo, weaponSetting.maxAmmo);
 
             // 무기 애니메이션 재생
             string animation = animator.AimModeIs == true ? "AimFire" : "Fire";
@@ -175,7 +131,7 @@ public class WeaponAssaultRifle : WeaponBase
             PlaySound(audioClipFire);
 
             // 탄피 생성
-            casingMemoryPool.SpawnCasing(casingSpawnPoint.position, transform.right);
+            CasingPool.SpawnCasing(casingSpawnPoint.position, transform.right);
 
             // 광선을 발사해 원하는 위치 공격 (+Impact Effect)
             TwoStepRaycast();
@@ -211,7 +167,7 @@ public class WeaponAssaultRifle : WeaponBase
 
         if (Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance))
         {
-            impactMemoryPool.SpawnImpact(hit);
+            ImpactPool.SpawnImpact(hit);
 
             if (hit.transform.CompareTag(GameManager.Instance.Enemy))
             {
@@ -272,7 +228,7 @@ public class WeaponAssaultRifle : WeaponBase
         isModeChange = false;
     }
 
-    private IEnumerator DeactiveOverHEeat()
+    private IEnumerator DeactiveOverHeat()
     {
         yield return new WaitForSeconds(DisableWeaponTime);
 

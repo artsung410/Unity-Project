@@ -59,7 +59,7 @@ public class CasingPool : MonoBehaviour
         Instance.Q.Enqueue(obj);
     }
 
-    public void SpawnCasing(Vector3 position, Vector3 direction)
+    public static void SpawnCasing(Vector3 position, Vector3 direction)
     {
         var obj = CasingPool.GetObject();
         obj.transform.position = position;
