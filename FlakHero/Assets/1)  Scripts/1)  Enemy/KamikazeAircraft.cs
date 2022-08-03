@@ -13,8 +13,7 @@ public class KamikazeAircraft : EnemyAircraft
 
     private void Awake()
     {
-        currentHP = maxHP;
-        IsSreachedPlayer = false; 
+        reset();
     }
 
     private void Update()
@@ -24,12 +23,14 @@ public class KamikazeAircraft : EnemyAircraft
 
     public override void TakeDamage(int damage)
     {
-        if (currentHP <= 0 && isExplode == false)
+        if (currentHP <= 0)
         {
-            StartCoroutine("ExplodeAircraft");
-
+            ExplodeAircraft();
             ItemAirDrop();
             GameManager.Instance.AddScore();
+
+            reset();
+            KamikazeAircraftPool.ReturnObject(this);
         }
 
         currentHP -= damage;
@@ -47,17 +48,24 @@ public class KamikazeAircraft : EnemyAircraft
         }
         else
         {
-            StartCoroutine("ExplodeAircraft");
+            ExplodeAircraft();
+            reset();
+            KamikazeAircraftPool.ReturnObject(this);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == GameManager.Instance.Player)
+        if (other.tag == "Player")
         {
             IsSreachedPlayer = true;
-
-            Debug.Log("적이 플레이어와 접촉함");
+            other.GetComponent<PlayerController>().TakeDamage(5);
         }
+    }
+
+    private void reset()
+    {
+        currentHP = maxHP;
+        IsSreachedPlayer = false;
     }
 }

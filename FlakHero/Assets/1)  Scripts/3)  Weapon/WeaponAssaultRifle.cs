@@ -168,15 +168,16 @@ public class WeaponAssaultRifle : WeaponBase
         if (Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance))
         {
             ImpactPool.SpawnImpact(hit);
+            Debug.Log(hit.collider.tag);
 
-            if (hit.transform.CompareTag(GameManager.Instance.Enemy))
+            if (hit.transform.CompareTag("EnemyA") || hit.transform.CompareTag("EnemyB"))
             {
                 hit.transform.GetComponent<EnemyAircraft>().TakeDamage(weaponSetting.damage);
             }
 
-            else if (hit.transform.CompareTag(GameManager.Instance.DropBox))
+            else if (hit.transform.CompareTag("DropBox"))
             {
-                hit.transform.GetComponent<SupplyBox>().TakeDamage(weaponSetting.damage);
+                hit.transform.GetComponent<SupplyBox>().Destruction();
             }
         }
 

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2275799564764691426}
   - component: {fileID: 7144736024893632652}
   m_Layer: 0
-  m_Name: FlakeItem
+  m_Name: ItemFlak
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

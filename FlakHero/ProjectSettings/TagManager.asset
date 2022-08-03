@@ -19,6 +19,9 @@ TagManager:
   - Missile
   - DropBox
   - Emp
+  - explosion3
+  - explosion2
+  - Impact
   layers:
   - Default
   - TransparentFX

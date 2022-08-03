@@ -40,13 +40,13 @@ public abstract class WeaponBase : MonoBehaviour
 
     // overHat 관리
     [HideInInspector]
-    public  float           heatingValue        = 0;                 // 무기과열 값
+    public  float           heatingValue;                 // 무기과열 값
     [HideInInspector]
-    public  int             OverHeatMaxCount    = 100;               // 최대 무기과열 최대치
+    public  int             OverHeatMaxCount;               // 최대 무기과열 최대치
     [HideInInspector]
-    public  bool            IsOnOverHeat        = false;             // overHeat인지 체크
+    public  bool            IsOnOverHeat;             // overHeat인지 체크
 
-    public  float           DisableWeaponTime   = 3f;                // 무기과열중일때 무기사용이 불가능한 시간
+    public  float           DisableWeaponTime;                // 무기과열중일때 무기사용이 불가능한 시간
 
     // Get Property's
     public      PlayerAnimatorController    Animator => animator;
@@ -73,14 +73,14 @@ public abstract class WeaponBase : MonoBehaviour
 
     public void AircoolingWeapon()
     {
-        heatingValue -= 0.2f;
+        heatingValue -= 50f * Time.deltaTime;
         heatingValue = Mathf.Clamp(heatingValue, 0, OverHeatMaxCount);
         onOverHeatEvent.Invoke(heatingValue);
     }
 
     public void HeatWeapon()
     {
-        heatingValue += 0.5f;
+        heatingValue += 100f * Time.deltaTime;
         heatingValue = Mathf.Clamp(heatingValue, 0, OverHeatMaxCount);
         onOverHeatEvent.Invoke(heatingValue);
     }

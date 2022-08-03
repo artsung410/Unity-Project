@@ -6,13 +6,14 @@ public class ProjectileExplosionPool : MonoBehaviour
 {
     public static ProjectileExplosionPool Instance;
     public GameObject ProjectileExplosionPrefab;
+    public int initActivationCount;
 
     private Queue<ProjectileExplosion> Q = new Queue<ProjectileExplosion>();
 
     private void Awake()
     {
         Instance = this;
-        Initilize(20);
+        Initilize(initActivationCount);
     }
 
     private ProjectileExplosion CreateNewObject()
@@ -36,7 +37,6 @@ public class ProjectileExplosionPool : MonoBehaviour
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
-            obj.transform.SetParent(null);
             obj.gameObject.SetActive(true);
             return obj;
         }
@@ -45,7 +45,6 @@ public class ProjectileExplosionPool : MonoBehaviour
         else
         {
             var newObj = Instance.CreateNewObject();
-            newObj.transform.SetParent(null);
             newObj.gameObject.SetActive(true);
             return newObj;
         }
@@ -54,7 +53,6 @@ public class ProjectileExplosionPool : MonoBehaviour
     public static void ReturnObject(ProjectileExplosion obj)
     {
         obj.gameObject.SetActive(false);
-        obj.transform.SetParent(Instance.transform);
         Instance.Q.Enqueue(obj);
     }
 }

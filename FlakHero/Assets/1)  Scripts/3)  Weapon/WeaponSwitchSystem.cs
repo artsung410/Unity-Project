@@ -10,7 +10,7 @@ public class WeaponSwitchSystem : MonoBehaviour
     private     PlayerHUD           playerHUD; 
 
     [SerializeField]
-    private     WeaponBase[]        weapons;             // 소지중인 무기 4종류
+    public  WeaponBase[]        weapons;             // 소지중인 무기 4종류
 
     private     WeaponBase          currentWeapon;       // 현재 사용중인 무기
     private     WeaponBase          previousWeapon;      // 직전에 사용했던 무기

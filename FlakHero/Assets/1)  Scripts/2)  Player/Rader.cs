@@ -24,7 +24,7 @@ public class Rader : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "EnemyA" || other.tag == "EnemyB")
         {
             EnemyDot = Instantiate(EnemyDotPrefab, GameObject.Find("Canvas").transform);
 

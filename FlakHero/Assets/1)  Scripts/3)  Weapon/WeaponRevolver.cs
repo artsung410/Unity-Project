@@ -44,17 +44,6 @@ public class WeaponRevolver : WeaponBase
 
     public void OnAttack()
     {
-        if (IsOnOverHeat == false)
-        {
-            HeatWeapon();
-        }
-
-        if (heatingValue > 99.9 && IsOnOverHeat == false)
-        {
-            IsOnOverHeat = true;
-            StartCoroutine("DeactiveOverHeat");
-        }
-
         if (Time.time - lastAttackTime > weaponSetting.attackRate)
         {
             // 뛰고있을 때는 공격할 수 없다.
@@ -121,14 +110,14 @@ public class WeaponRevolver : WeaponBase
         {
             ImpactPool.SpawnImpact(hit);
 
-            if (hit.transform.CompareTag(GameManager.Instance.Enemy))
+            if (hit.transform.CompareTag("EnemyA") || hit.transform.CompareTag("EnemyB"))
             {
                 hit.transform.GetComponent<EnemyAircraft>().TakeDamage(weaponSetting.damage);
             }
 
-            else if (hit.transform.CompareTag(GameManager.Instance.DropBox))
+            else if (hit.transform.CompareTag("DropBox"))
             {
-                hit.transform.GetComponent<SupplyBox>().TakeDamage(weaponSetting.damage);
+                hit.transform.GetComponent<SupplyBox>().Destruction();
             }
         }
 
@@ -141,10 +130,4 @@ public class WeaponRevolver : WeaponBase
         isAttack = false;
     }
 
-    private IEnumerator DeactiveOverHeat()
-    {
-        yield return new WaitForSeconds(DisableWeaponTime);
-
-        IsOnOverHeat = false;
-    }
 }

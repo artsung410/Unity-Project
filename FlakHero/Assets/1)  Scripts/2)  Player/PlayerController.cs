@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private     PlayerMovement              movement;                           // 키보드 입력으로 플레이어 이동, 점프
     private     Status                      status;                             // 이동속도 등의 플레이어 정보
     private     AudioSource                 audioSource;                        // 사운드 재생 제어
-    private     WeaponBase                  Weapon;                             // 모든 무기가 상속받는 기반 클래스
+    public     WeaponBase                  Weapon;                             // 모든 무기가 상속받는 기반 클래스
 
     void Awake()
     {
@@ -103,7 +103,28 @@ public class PlayerController : MonoBehaviour
     {
         if (Weapon.IsOnOverHeat == false)
         {
-            Weapon.AircoolingWeapon();
+            WeaponSwitchSystem Currentweapon = GetComponent<WeaponSwitchSystem>();
+            WeaponBase AK47 = Currentweapon.weapons[0];
+
+            if (Weapon == Currentweapon.weapons[0]) // 현재 쥐고있는 무기가 어썰트 라이플일때
+            {
+                AK47.AircoolingWeapon();
+            }
+
+            else // 현재 쥐고있는 무기가 리볼버일때, 
+            {
+                Weapon.heatingValue = 0;
+
+                if (AK47.IsOnOverHeat == true)
+                {
+                    AK47.IsOnOverHeat = false;
+                }
+
+                if (AK47.IsOnOverHeat == false)
+                {
+                    AK47.AircoolingWeapon();
+                }
+            }
         }
 
         if (Input.GetMouseButtonDown(0))

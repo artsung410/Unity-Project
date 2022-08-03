@@ -8,6 +8,12 @@ public class UnderGroundCollider : MonoBehaviour
     {
         if (other.CompareTag("DropBox"))
         {
+            SupplyBox obj = other.GetComponent<SupplyBox>();
+            SupplyBoxPool.ReturnObject(obj);
+        }
+
+        if (other.CompareTag("ImpactNormal"))
+        {
             other.gameObject.SetActive(false);
         }
     }

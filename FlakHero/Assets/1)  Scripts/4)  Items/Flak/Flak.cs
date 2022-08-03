@@ -13,8 +13,6 @@ public class Flak : MonoBehaviour
     public AudioClip audioClipInitFlak;   // 포탑 생성 소리
     public AudioClip audioClipProjectile; // 포탄 발사 소리
 
-
-
     // 1, 2, 3, 4 분면
     int[] dx = { 10, -10, -10, 10 };
     int[] dz = { 10, 10, -10, -10 };
@@ -28,7 +26,6 @@ public class Flak : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-
     }
 
     private void Start()
@@ -82,16 +79,11 @@ public class Flak : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("EnemyA") || other.CompareTag("EnemyB"))
         {
             target = other.gameObject;
 
             isReadyToLaunch = true;
-            //if (other.gameObject.activeSelf == false)
-            //{
-            //    isReadyToLaunch = false;
-            //    StopCoroutine("ProjectileSpawn");
-            //}
         }
     }
 

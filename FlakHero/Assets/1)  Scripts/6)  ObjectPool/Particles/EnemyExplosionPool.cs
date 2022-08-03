@@ -6,13 +6,14 @@ public class EnemyExplosionPool : MonoBehaviour
 {
     public static EnemyExplosionPool Instance;
     public GameObject EnemyExplosionPrefab;
+    public int initActivationCount;
 
     private Queue<EnemyExplosion> Q = new Queue<EnemyExplosion>();
 
     private void Awake()
     {
         Instance = this; // 객체 자기자신을 가리킴
-        Initilize(20);
+        Initilize(initActivationCount);
     }
 
     private EnemyExplosion CreateNewObject() // 새로운 총알을 만드렁내는 역할
@@ -36,7 +37,6 @@ public class EnemyExplosionPool : MonoBehaviour
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
-            obj.transform.SetParent(null);
             obj.gameObject.SetActive(true);
             return obj;
         }
@@ -45,7 +45,6 @@ public class EnemyExplosionPool : MonoBehaviour
         else
         {
             var newObj = Instance.CreateNewObject();
-            newObj.transform.SetParent(null);
             newObj.gameObject.SetActive(true);
             return newObj;
         }
@@ -54,7 +53,6 @@ public class EnemyExplosionPool : MonoBehaviour
     public static void ReturnObject(EnemyExplosion obj)
     {
         obj.gameObject.SetActive(false);
-        obj.transform.SetParent(Instance.transform);
         Instance.Q.Enqueue(obj);
     }
 }

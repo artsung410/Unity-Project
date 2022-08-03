@@ -742,14 +742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1284dda1626726a4ebafe6e20d0eb8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  explosionPrefab: {fileID: 6883561620270123213, guid: 7d4ea6824b17d02408362c052d85a698, type: 3}
-  ItemPrefabs:
-  - {fileID: 1611803862884829687, guid: ec904f47524af5546bdd7f94c98155fb, type: 3}
-  - {fileID: 4830995354370163616, guid: 2e3a9a7364bb9ab49bbcc691206665d9, type: 3}
-  - {fileID: 4560873541621708836, guid: a3c53f9c84af3b54ead480f99c768986, type: 3}
-  - {fileID: 2434925759457847447, guid: 05182b95b2efc34489e067f5b7b228f7, type: 3}
 --- !u!23 &5097016064141966656
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1845,6 +1837,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7746994634285140243}
     m_Modifications:
+    - target: {fileID: 406233577228157040, guid: b165387022a7af847b2155d52f31b20d, type: 3}
+      propertyPath: m_TagString
+      value: DropBox
+      objectReference: {fileID: 0}
     - target: {fileID: 1018825161209184731, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1854,6 +1850,10 @@ PrefabInstance:
       value: PUBG_BOX
       objectReference: {fileID: 0}
     - target: {fileID: 1682214226812005561, guid: b165387022a7af847b2155d52f31b20d, type: 3}
+      propertyPath: m_TagString
+      value: DropBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160266616065886730, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_TagString
       value: DropBox
       objectReference: {fileID: 0}
@@ -1913,6 +1913,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 782357c9093b3d04eb46c913231dade5, type: 2}
+    - target: {fileID: 9130467612277561525, guid: b165387022a7af847b2155d52f31b20d, type: 3}
+      propertyPath: m_TagString
+      value: DropBox
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b165387022a7af847b2155d52f31b20d, type: 3}

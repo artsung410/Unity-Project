@@ -6,10 +6,17 @@ public class FlakProjectile : MonoBehaviour
     public GameObject ExplosionPrefab;
 
     [SerializeField]
-    private float Speed = 20f; // ºñÇà ½ºÇÇµå
+    private float Speed = 20f;
+
+    private float DeSpawnTime = 2f;
 
     [SerializeField]
     int bulletDamage = 50;
+
+    private void Start()
+    {
+        StartCoroutine("DeactiveObject");
+    }
 
     void Update()
     {
@@ -29,11 +36,15 @@ public class FlakProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("EnemyA") || other.CompareTag("EnemyB"))
         {
             other.GetComponent<EnemyAircraft>().TakeDamage(bulletDamage);
-            Instantiate(ExplosionPrefab, transform.position, transform.rotation);
-            gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator DeactiveObject()
+    {
+        yield return new WaitForSeconds(DeSpawnTime);
+        FlakProjectilePool.ReturnObject(this);
     }
 }

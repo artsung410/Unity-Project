@@ -9,9 +9,6 @@ public class GameManager : SingletonBehaviour<GameManager>
     public bool IsGameOver;// 게임 오버 상태
 
     [HideInInspector]
-    public string Enemy = "Enemy";
-
-    [HideInInspector]
     public string EffectiveRange = "EffectiveRange";
 
     [HideInInspector]
@@ -19,9 +16,6 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     [HideInInspector]
     public string ImpactNormal = "ImpactNormal";
-
-    [HideInInspector]
-    public string DropBox = "DropBox";
 
     [System.Serializable]
     public class GameEndEvent : UnityEngine.Events.UnityEvent{ }
@@ -68,6 +62,7 @@ public class GameManager : SingletonBehaviour<GameManager>
         if (isEnd && Input.GetKeyDown(KeyCode.R))
         {
             Reset();
+            flakCount = 0;
             SceneManager.LoadScene(0);
         }
     }
@@ -86,6 +81,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     private void Reset()
     {
         currentScore = 0;
+        resetFlak();
         isEnd = false;
     }
 
@@ -102,5 +98,13 @@ public class GameManager : SingletonBehaviour<GameManager>
         }
 
         return flakCount;
+    }
+
+    private void resetFlak()
+    {
+        for (int i = 0; i < maxFlakCount; i++)
+        {
+            IsFlakOnWorlds[i] = false;
+        }
     }
 }

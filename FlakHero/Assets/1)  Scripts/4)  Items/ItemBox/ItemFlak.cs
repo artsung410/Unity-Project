@@ -5,9 +5,6 @@ using UnityEngine;
 public class ItemFlak : ItemBase
 {
     [SerializeField]
-    private GameObject FlakPrefeb;
-
-    [SerializeField]
     private float moveDistance = 0.2f;
 
     [SerializeField]
@@ -44,9 +41,9 @@ public class ItemFlak : ItemBase
 
         if (flakeCount < maxFlakCount)
         {
-            Instantiate(FlakPrefeb);
+            FlakPool.GetObject();
         }
 
-        Destroy(gameObject);
+        ItemFlakPool.ReturnObject(this);
     }
 }

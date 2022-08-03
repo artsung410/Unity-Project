@@ -48,7 +48,7 @@ public class ItemCoin : ItemBase
             GameManager.Instance.AddScore();
             playSound(coinSound);
             meshBody.SetActive(false);
-            Destroy(gameObject, 3f);
+            Invoke("DeactiveObject", 3f);
             isGetCoin = true;
         }
     }
@@ -57,5 +57,10 @@ public class ItemCoin : ItemBase
     {
         audioSource.clip = sound;
         audioSource.Play();
+    }
+
+    private void DeactiveObject()
+    {
+        ItemCoinPool.ReturnObject(this);
     }
 }

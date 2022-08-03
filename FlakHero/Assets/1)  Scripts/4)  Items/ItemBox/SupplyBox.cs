@@ -2,25 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemType { Heal = 0, Coin, Emp, Flak}
 
 public class SupplyBox : MonoBehaviour
 {
-    // 자식클래스에 사용할수있도록 protected로 선언
-    [Header("EnemyAircraft")]
-    [SerializeField]
-    protected int maxHP = 100; // 최대체력
-
-    [SerializeField]
-    protected int currentHP; // 현재체력
-
-    [SerializeField]
-    protected GameObject explosionPrefab;
-
-    [SerializeField]
-    public GameObject[] ItemPrefabs;      // 아이템 프리팹
-
-    protected bool isExplode = false;
+    public enum ItemType { Heal = 0, Coin, Emp, Flak }
 
     int randNum;
 
@@ -31,46 +16,42 @@ public class SupplyBox : MonoBehaviour
         randNum = (flakCount == 4) ? Random.Range(0, 3) : Random.Range(0, 4);
     }
 
-    private void Awake()
+    public void Destruction()
     {
-        currentHP = maxHP; 
-    }
-
-    public void TakeDamage(int damage)
-    {
-        if (transform.position.y < 0.5)
+        if (gameObject.transform.position.y < 0.3f)
         {
-            currentHP -= damage;
-        }
+            SupplyBoxPool.ReturnObject(this);
 
-        if (currentHP <= 0 && isExplode == false)
-        {
-            StartCoroutine("Explode");
+            Vector3 itemDropPosition = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
 
-            ItemInit(ItemPrefabs);
+            PickingItem().transform.position = itemDropPosition;
         }
     }
 
-    private IEnumerator Explode()
+    private GameObject PickingItem()
     {
-        // 근처의 전투기가 터져서 다시 터트리려고 할 때(StackOverflow 방지)
-        isExplode = true;
+        GameObject pickItem = null;
 
-        //// 폭발 이펙트 생성
-        //Bounds bounds = GetComponent<Collider>().bounds;
-        //Instantiate(explosionPrefab, new Vector3(bounds.center.x, bounds.min.y, bounds.center.z), transform.rotation);
-        gameObject.SetActive(false);
+        switch (randNum)
+        {
+            case 0:
+                ItemHeal Heal = ItemHealPool.GetObject(); // Heal
+                pickItem = Heal.gameObject;
+                break;
+            case 1:
+                ItemCoin Coin = ItemCoinPool.GetObject(); // Coin
+                pickItem = Coin.gameObject;
+                break;
+            case 2:
+                ItemEmp Emp = ItemEmpPool.GetObject(); // Emp
+                pickItem = Emp.gameObject;
+                break;
+            case 3:
+                ItemFlak Flak = ItemFlakPool.GetObject(); // Flak
+                pickItem = Flak.gameObject;
+                break;
+        }
 
-        yield return null;
-    }
-
-    private void ItemInit(GameObject[] items)
-    {
-        Debug.Log(randNum);
-
-        Vector3 itemDropPosition = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-
-        GameObject item = Instantiate(items[randNum], itemDropPosition, transform.rotation);
-        item.SetActive(true);
+        return pickItem;
     }
 }

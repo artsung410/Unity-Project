@@ -13,7 +13,7 @@ public class EnemyMissile : MonoBehaviour
     public  float       explosionForce      = 1000.0f;
     public  bool        IsSreachedPlayer;                   
 
-    private void Awake()
+    private void Start()
     {
         IsSreachedPlayer = false;
     }
@@ -77,8 +77,7 @@ public class EnemyMissile : MonoBehaviour
                 continue;
             }
         }
-
-        gameObject.SetActive(false);
+        EnemyMissilePool.ReturnObject(this);
     }
 
     private IEnumerator NotFoundTarget()
@@ -89,7 +88,7 @@ public class EnemyMissile : MonoBehaviour
 
         if (gameObject != null)
         {
-            gameObject.SetActive(false);
+            EnemyMissilePool.ReturnObject(this);
         }
     }
 

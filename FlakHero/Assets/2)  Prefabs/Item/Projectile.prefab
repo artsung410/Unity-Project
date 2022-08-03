@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 1427962332153456, guid: 301583a5af63a494298d60cd9f296909, type: 3}
-  Speed: 30
+  Speed: 60
   bulletDamage: 50
 --- !u!1 &7662037698087214523
 GameObject:

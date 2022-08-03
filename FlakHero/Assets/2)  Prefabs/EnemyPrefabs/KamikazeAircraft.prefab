@@ -267,11 +267,11 @@ GameObject:
   - component: {fileID: 3348533036929023390}
   m_Layer: 0
   m_Name: KamikazeAircraft
-  m_TagString: Enemy
+  m_TagString: EnemyA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5996435328125329543
 Transform:
   m_ObjectHideFlags: 0
@@ -331,11 +331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b7599df801f09409025a782380c8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
-  SupplyBoxPrefab: {fileID: 5143383603307160316, guid: b6a8755b35a02e540a96b7c6b5c42377, type: 3}
   explosionRadius: 10
   explosionForce: 1000
   isRandomItemDrop: 0
+  enemyExplosionPrefab: {fileID: 0}
   target: {fileID: 0}
   maxHP: 100
   currentHP: 0

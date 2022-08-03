@@ -6,6 +6,7 @@ public class MissileAircraftPool : MonoBehaviour
 {
     public static MissileAircraftPool Instance;
     public GameObject MissileAircraftPrefab;
+    public int initActivationCount;
 
     private Queue<MissileAircraft> Q = new Queue<MissileAircraft>();
 
@@ -36,7 +37,6 @@ public class MissileAircraftPool : MonoBehaviour
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
-            obj.transform.SetParent(null);
             obj.gameObject.SetActive(true);
             return obj;
         }
@@ -45,7 +45,6 @@ public class MissileAircraftPool : MonoBehaviour
         else
         {
             var newObj = Instance.CreateNewObject();
-            newObj.transform.SetParent(null);
             newObj.gameObject.SetActive(true);
             return newObj;
         }
@@ -54,7 +53,6 @@ public class MissileAircraftPool : MonoBehaviour
     public static void ReturnObject(MissileAircraft obj)
     {
         obj.gameObject.SetActive(false);
-        obj.transform.SetParent(Instance.transform);
         Instance.Q.Enqueue(obj);
     }
 }

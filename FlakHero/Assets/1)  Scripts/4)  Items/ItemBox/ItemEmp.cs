@@ -7,7 +7,7 @@ public class ItemEmp : ItemBase
     public  float       moveDistance = 0.2f;
     public  float       pingpongSpeed = 0.5f;
     public  float       rotateSpeed = 50;
-    public  GameObject  EmpPrefab;
+
     private IEnumerator Start()
     {
         float y = transform.position.y;
@@ -27,8 +27,9 @@ public class ItemEmp : ItemBase
     public override void Use(GameObject entity)
     {
         GameManager.Instance.AddScore();
-        Instantiate(EmpPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Emp obj = EmpPool.GetObject();
+        obj.gameObject.transform.position = transform.position;
+        ItemEmpPool.ReturnObject(this);
     }
 
 }

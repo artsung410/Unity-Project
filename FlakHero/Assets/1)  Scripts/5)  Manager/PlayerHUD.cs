@@ -15,7 +15,7 @@ public class PlayerHUD : MonoBehaviour
     [Header("Weapon Base")]
     public TextMeshProUGUI textWeaponName;     // 무기 이름
     public Image imageWeaponIcon;    // 무기 아이콘
-    public Sprite[] spriteWeaponIcons;  // 무기 아이콘에 사용되는 sprite 배열
+    public Image[] WeaponIcons;  // 무기 아이콘에 사용되는 sprite 배열
     [SerializeField]
     private Vector2[] sizeWeaponIcons;    // 무기 아이콘의 UI 크기 배열
 
@@ -43,22 +43,8 @@ public class PlayerHUD : MonoBehaviour
     {
         status.onHPEvent.AddListener(UpdateHPHUD);
         weapon.onOverHeatEvent.AddListener(UpdateOverHeatHUD);
-        weaponAnimator = imageWeaponIcon.GetComponent<Animator>();
+        weaponAnimator = WeaponIcons[0].GetComponent<Animator>();
     }
-
-
-    //public void SetupAllWeapons(WeaponBase[] weapons)
-    //{
-    //    //SetupMagazine();
-
-    //    // 사용 가능한 모든 무기의 이벤트 등록
-
-    //    //for (int i = 0; i < weapons.Length; ++i)
-    //    //{
-    //    //    weapons[i].onAmmoEvent.AddListener(UpdateAmmoHUD);
-    //    //    weapon[i].onMagazineEvent.AddListener(UpdateMagazineHUD);
-    //    //}
-    //}
 
     // 텍스트 웨폰 네임에 무기 이름을 출력하고 이미지 웨폰 아이콘에 무기 이미지를 출력한다.
     public void SwitchingWeapon(WeaponBase newWeapon)
@@ -71,8 +57,14 @@ public class PlayerHUD : MonoBehaviour
     private void SetupWeapon()
     {
         textWeaponName.text = weapon.WeaponName.ToString();
-        imageWeaponIcon.sprite = spriteWeaponIcons[(int)weapon.WeaponName];
+
+        imageWeaponIcon.gameObject.SetActive(false);
+        
+        imageWeaponIcon = WeaponIcons[(int)weapon.WeaponName];
         imageWeaponIcon.rectTransform.sizeDelta = sizeWeaponIcons[(int)weapon.WeaponName];
+
+        imageWeaponIcon.gameObject.SetActive(true);
+        weaponAnimator = imageWeaponIcon.GetComponent<Animator>();
     }
 
     void UpdateHPHUD(int previous, int current)
@@ -92,7 +84,14 @@ public class PlayerHUD : MonoBehaviour
 
     void UpdateOverHeatHUD(float HeatCount)
     {
-        overheatBar.fillAmount = HeatCount / 100f;
+        if (imageWeaponIcon == WeaponIcons[0])
+        {
+            overheatBar.fillAmount = HeatCount / 100f;
+        }
+        else
+        {
+            overheatBar.fillAmount = 0;
+        }
 
         float fillValue = overheatBar.fillAmount;
 

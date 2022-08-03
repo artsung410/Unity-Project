@@ -38,7 +38,7 @@ public class ItemHeal : ItemBase
 
         Instantiate(hpEffectPrefeb, transform.position, Quaternion.identity);
 
-        Destroy(gameObject);
+        ItemHealPool.ReturnObject(this);
     }
 
 }

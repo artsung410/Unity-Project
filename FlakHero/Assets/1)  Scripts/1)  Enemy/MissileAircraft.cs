@@ -5,13 +5,12 @@ using UnityEngine;
 public class MissileAircraft : EnemyAircraft
 {
     [Header("MisslieAircraft")]
-    public  GameObject  target;                     // 플레이어 게임오브젝트 가져오기
-    public  GameObject  MissilePrefab;              // 미사일 프리팹 가져오기
-    public  Transform   MissileSpawnPoint;          // 미사일 프리팹 가져오기
-    public  int         maxHP = 100;                // 최대체력
-    public  int         currentHP;                  // 현재체력
-    public  float       flightSpeed = 10f;          // 비행 스피드
-    public  bool        IsRreadyToLaunchMissile;    // 미사일 발사 준비 여부
+    public  GameObject  target;                     
+    public  Transform   MissileSpawnPoint;          
+    public  int         maxHP = 100;                
+    public  int         currentHP;                  
+    public  float       flightSpeed = 10f;          
+    public  bool        IsRreadyToLaunchMissile;    
     public  bool        IsMissileLunched;
     public  float       survivalTime = 2f;
 
@@ -19,10 +18,7 @@ public class MissileAircraft : EnemyAircraft
 
     private void Awake()
     {
-        currentHP = maxHP; // 현재 체력 = 최대체력으로 초기화
-        destoryDirection = new Vector3(transform.position.x, transform.position.y, -transform.position.z);
-        IsRreadyToLaunchMissile = false;
-        IsMissileLunched = false;
+        reset();
     }
 
     private void Update()
@@ -32,9 +28,12 @@ public class MissileAircraft : EnemyAircraft
 
     public override void TakeDamage(int damage)
     {
-        if (currentHP <= 0 && isExplode == false)
+        if (currentHP <= 0)
         {
-            StartCoroutine("ExplodeAircraft");
+            ExplodeAircraft();
+
+            reset();
+            MissileAircraftPool.ReturnObject(this);
 
             ItemAirDrop();
             GameManager.Instance.AddScore();
@@ -61,11 +60,11 @@ public class MissileAircraft : EnemyAircraft
 
             if (IsMissileLunched == false)
             {
-                GameObject misslie = Instantiate(MissilePrefab, MissileSpawnPoint.position, MissileSpawnPoint.rotation);
-                misslie.SetActive(true);
+                EnemyMissile missile = EnemyMissilePool.GetObject();
+                missile.gameObject.transform.position = MissileSpawnPoint.position;
+                missile.gameObject.transform.rotation = MissileSpawnPoint.rotation;
                 IsMissileLunched = true;
             }
-
             StartCoroutine("DeactiveSelf");
         }
     }
@@ -74,7 +73,8 @@ public class MissileAircraft : EnemyAircraft
     {
         yield return new WaitForSeconds(survivalTime);
 
-        gameObject.SetActive(false);
+        reset();
+        MissileAircraftPool.ReturnObject(this);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -83,5 +83,13 @@ public class MissileAircraft : EnemyAircraft
         {
             IsRreadyToLaunchMissile = true;
         }
+    }
+
+    private void reset()
+    {
+        currentHP = maxHP; // 현재 체력 = 최대체력으로 초기화
+        destoryDirection = new Vector3(transform.position.x, transform.position.y, -transform.position.z);
+        IsRreadyToLaunchMissile = false;
+        IsMissileLunched = false;
     }
 }

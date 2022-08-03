@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 5100002424925756545}
   m_Layer: 0
   m_Name: MissileAircraft
-  m_TagString: Enemy
+  m_TagString: EnemyB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1200,11 +1200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff9101bc827b43478e1e6ec22bd3e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
-  SupplyBoxPrefab: {fileID: 5143383603307160316, guid: b6a8755b35a02e540a96b7c6b5c42377, type: 3}
   explosionRadius: 10
   explosionForce: 1000
   isRandomItemDrop: 0
+  enemyExplosionPrefab: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
   target: {fileID: 0}
   MissilePrefab: {fileID: 0}
   MissileSpawnPoint: {fileID: 859870697964432277}
