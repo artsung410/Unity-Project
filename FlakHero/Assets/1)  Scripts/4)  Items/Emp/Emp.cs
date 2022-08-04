@@ -5,9 +5,9 @@ using UnityEngine;
 public class Emp : MonoBehaviour
 {
     public int Damage;
-    private void Start()
+    private void Awake()
     {
-        Invoke("DeactivateObect", 3f);
+        Invoke("DeactivateObect", 2f);
     }
 
     private void OnTriggerEnter(Collider other)

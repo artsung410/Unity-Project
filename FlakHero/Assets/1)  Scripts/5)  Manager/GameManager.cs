@@ -1,12 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// 점수와 게임 오버 여부를 관리하는 게임 매니저
 
 public class GameManager : SingletonBehaviour<GameManager>
 {
     [HideInInspector]
-    public bool IsGameOver;// 게임 오버 상태
+    public bool IsGameOver;
 
     [HideInInspector]
     public string EffectiveRange = "EffectiveRange";

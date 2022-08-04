@@ -12,11 +12,11 @@ public class ImpactPool : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this; // 객체 자기자신을 가리킴
+        Instance = this; 
         Initilize(initActivationCount);
     }
 
-    private Impact CreateNewObject() // 새로운 총알을 만드렁내는 역할
+    private Impact CreateNewObject()
     {
         var newObj = Instantiate(ImpactPrefab, transform).GetComponent<Impact>();
         newObj.gameObject.SetActive(false);
@@ -33,7 +33,6 @@ public class ImpactPool : MonoBehaviour
 
     public static Impact GetObject()
     {
-        // 빌려줄 오브젝트가 있을때 
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
@@ -41,7 +40,6 @@ public class ImpactPool : MonoBehaviour
             return obj;
         }
 
-        // 없을때
         else
         {
             var newObj = Instance.CreateNewObject();

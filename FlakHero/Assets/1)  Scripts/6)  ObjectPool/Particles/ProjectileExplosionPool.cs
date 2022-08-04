@@ -33,7 +33,6 @@ public class ProjectileExplosionPool : MonoBehaviour
 
     public static ProjectileExplosion GetObject()
     {
-        // 빌려줄 오브젝트가 있을때 
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
@@ -41,7 +40,6 @@ public class ProjectileExplosionPool : MonoBehaviour
             return obj;
         }
 
-        // 없을때
         else
         {
             var newObj = Instance.CreateNewObject();

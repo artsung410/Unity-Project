@@ -22,6 +22,7 @@ public class Rader : MonoBehaviour
     {
         rotateToMouse = GetComponentInParent<RotateToMouse>();
     }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "EnemyA" || other.tag == "EnemyB")

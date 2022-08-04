@@ -182,7 +182,6 @@ public class WeaponAssaultRifle : WeaponBase
         }
 
         Debug.DrawRay(bulletSpawnPoint.position, attackDirection * weaponSetting.attackDistance, Color.blue);
-
     }
 
     private IEnumerator OnModeChange()

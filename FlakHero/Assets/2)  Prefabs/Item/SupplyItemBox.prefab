@@ -1839,7 +1839,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 406233577228157040, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_TagString
-      value: DropBox
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1018825161209184731, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1851,11 +1851,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1682214226812005561, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_TagString
-      value: DropBox
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2160266616065886730, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_TagString
-      value: DropBox
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2440432090316018030, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1915,7 +1915,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 782357c9093b3d04eb46c913231dade5, type: 2}
     - target: {fileID: 9130467612277561525, guid: b165387022a7af847b2155d52f31b20d, type: 3}
       propertyPath: m_TagString
-      value: DropBox
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

@@ -61,10 +61,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -157,123 +155,123 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1546}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 10352}
     - Class: 114
-      Script: {instanceID: 2196}
+      Script: {instanceID: 10492}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 10532}
     - Class: 114
-      Script: {instanceID: 2260}
+      Script: {instanceID: 10602}
     - Class: 114
-      Script: {instanceID: 2272}
+      Script: {instanceID: 10648}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 10660}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 11018}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 11028}
     - Class: 114
-      Script: {instanceID: 3400}
+      Script: {instanceID: 11240}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 11774}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 11824}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 11916}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 4472}
+      Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 4532}
+      Script: {instanceID: 12452}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 12560}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 4874}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 5004}
+      Script: {instanceID: 12830}
     - Class: 114
-      Script: {instanceID: 5226}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 5348}
+      Script: {instanceID: 13074}
     - Class: 114
-      Script: {instanceID: 5750}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 5832}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 5982}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 5990}
+      Script: {instanceID: 13560}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 13676}
     - Class: 114
-      Script: {instanceID: 6262}
+      Script: {instanceID: 14072}
     - Class: 114
-      Script: {instanceID: 6278}
+      Script: {instanceID: 14154}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 14300}
     - Class: 114
-      Script: {instanceID: 6364}
+      Script: {instanceID: 14306}
     - Class: 114
-      Script: {instanceID: 6452}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 6484}
+      Script: {instanceID: 14568}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 14584}
     - Class: 114
-      Script: {instanceID: 6562}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 6866}
+      Script: {instanceID: 14666}
     - Class: 114
-      Script: {instanceID: 7052}
+      Script: {instanceID: 14752}
     - Class: 114
-      Script: {instanceID: 7204}
+      Script: {instanceID: 14784}
     - Class: 114
-      Script: {instanceID: 7288}
+      Script: {instanceID: 14814}
     - Class: 114
-      Script: {instanceID: 7430}
+      Script: {instanceID: 14862}
     - Class: 114
-      Script: {instanceID: 7502}
+      Script: {instanceID: 15164}
     - Class: 114
-      Script: {instanceID: 7814}
+      Script: {instanceID: 15350}
     - Class: 114
-      Script: {instanceID: 7828}
+      Script: {instanceID: 15500}
     - Class: 114
-      Script: {instanceID: 7904}
+      Script: {instanceID: 15582}
     - Class: 114
-      Script: {instanceID: 8028}
+      Script: {instanceID: 15722}
     - Class: 114
-      Script: {instanceID: 8240}
+      Script: {instanceID: 15794}
     - Class: 114
-      Script: {instanceID: 59988}
+      Script: {instanceID: 15796}
     - Class: 114
-      Script: {instanceID: 59994}
+      Script: {instanceID: 16094}
     - Class: 114
-      Script: {instanceID: 65090}
+      Script: {instanceID: 16108}
     - Class: 114
-      Script: {instanceID: 65096}
+      Script: {instanceID: 16180}
     - Class: 114
-      Script: {instanceID: 65102}
+      Script: {instanceID: 16244}
     - Class: 114
-      Script: {instanceID: 65108}
+      Script: {instanceID: 16306}
     - Class: 114
-      Script: {instanceID: 71832}
+      Script: {instanceID: 16514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -311,22 +309,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 8bf14ea4c2573341442cfb01300f46e1
@@ -381,6 +373,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RotateToMouse
+  - hash:
+      serializedVersion: 2
+      Hash: 87e276b4c36dbe62597b34da1c5d6d14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemCoinPool
+  - hash:
+      serializedVersion: 2
+      Hash: ba8551280ed70517811af9135419b213
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SupplyBoxPool
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -665,6 +669,18 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: f121037f3fbeea50788fddaeb6a25067
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemFlakPool
+  - hash:
+      serializedVersion: 2
+      Hash: 9de0aa0bcad2dc6cc68f6c8674f6bc8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FlakPool
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -825,6 +841,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: a6eb141a8672c819480f1bfccc233087
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemHealPool
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -989,16 +1011,16 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: a2caea422faed1ea705fe2e9ec02f4a6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EmpColider
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDeselectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5a53671008ad6f68b0d110f7c70d732d
@@ -1013,7 +1035,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: dbb0a7b7461c44101df31c40555e8a8d
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SupplyBox
@@ -1103,7 +1125,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: f7a1500bf82fe4e6743c4057ffab11f3
+      Hash: 572d855a7d0d03a678aca6553c643a93
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1229,7 +1251,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 56d88990eaeba5bb149463a901260022
+      Hash: 05cb9db617397d1d122b151bde79632e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MissileAircraft
@@ -1313,6 +1335,12 @@ ScriptsOnlyBuild:
     className: EnemySpawnBox
   - hash:
       serializedVersion: 2
+      Hash: ef5e394a3122e383995703f19ac04f44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EmpPool
+  - hash:
+      serializedVersion: 2
       Hash: 2516c569a5afe369671ab79778906a15
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1373,6 +1401,12 @@ ScriptsOnlyBuild:
     className: EnemySpawnBoxPool
   - hash:
       serializedVersion: 2
+      Hash: 34fe7eb1c45511caf091b0ca6942a63b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemEmpPool
+  - hash:
+      serializedVersion: 2
       Hash: 318e0be0f0ee24664cb7e1491fa8da21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1413,49 +1447,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: ba8551280ed70517811af9135419b213
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SupplyBoxPool
-  - hash:
-      serializedVersion: 2
-      Hash: 9de0aa0bcad2dc6cc68f6c8674f6bc8f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FlakPool
-  - hash:
-      serializedVersion: 2
-      Hash: 87e276b4c36dbe62597b34da1c5d6d14
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ItemCoinPool
-  - hash:
-      serializedVersion: 2
-      Hash: 34fe7eb1c45511caf091b0ca6942a63b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ItemEmpPool
-  - hash:
-      serializedVersion: 2
-      Hash: f121037f3fbeea50788fddaeb6a25067
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ItemFlakPool
-  - hash:
-      serializedVersion: 2
-      Hash: a6eb141a8672c819480f1bfccc233087
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ItemHealPool
-  - hash:
-      serializedVersion: 2
-      Hash: ef5e394a3122e383995703f19ac04f44
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EmpPool
   platform: 19
   scenePathNames:
   - Assets/8)  Scenes/GameScene.unity
-  playerPath: "C:/Users/\uC131\uAD8C\uBB38/Desktop/\uBE4C\uB4DC/FPSPrototype.exe"
+  playerPath: C:/Users/KGA_11/Desktop/flakHero/FPSPrototype.exe

@@ -14,13 +14,11 @@ public abstract class EnemyAircraft : MonoBehaviour
 
     protected void ExplodeAircraft()
     {
-        // 근처의 전투기가 터져서 다시 현재 전투기를 터트리려고 할 때(StackOverflow 방지)
         OnExplosion();
     }
 
     protected void ItemAirDrop()
     {
-        // 33% 확률로 드랍
         if (isRandomItemDrop == true)
         {
             RandomDropIndex = Random.Range(1, 4);
@@ -30,6 +28,7 @@ public abstract class EnemyAircraft : MonoBehaviour
                 ItemInit();
             }
         }
+
         else
         {
             ItemInit();

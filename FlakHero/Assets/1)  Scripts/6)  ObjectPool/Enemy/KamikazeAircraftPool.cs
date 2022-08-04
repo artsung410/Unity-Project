@@ -12,11 +12,11 @@ public class KamikazeAircraftPool : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this; // 객체 자기자신을 가리킴
+        Instance = this;
         Initilize(initActivationCount);
     }
 
-    private KamikazeAircraft CreateNewObject() // 새로운 총알을 만드렁내는 역할
+    private KamikazeAircraft CreateNewObject()
     {
         var newObj = Instantiate(KamikazeAircraftPrefab, transform).GetComponent<KamikazeAircraft>();
         newObj.gameObject.SetActive(false);
@@ -33,7 +33,6 @@ public class KamikazeAircraftPool : MonoBehaviour
 
     public static KamikazeAircraft GetObject()
     {
-        // 빌려줄 오브젝트가 있을때 
         if (Instance.Q.Count > 0)
         {
             var obj = Instance.Q.Dequeue();
@@ -41,7 +40,6 @@ public class KamikazeAircraftPool : MonoBehaviour
             return obj;
         }
 
-        // 없을때
         else
         {
             var newObj = Instance.CreateNewObject();

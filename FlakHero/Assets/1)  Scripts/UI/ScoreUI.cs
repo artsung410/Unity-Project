@@ -15,7 +15,6 @@ public class ScoreUI : MonoBehaviour
     private void OnEnable()
     {
         GameManager.Instance.OnScoreChange.AddListener(UpdateText);
-        //GameManager.Instance.OnScoreChanged2 += UpdateText;
     }
 
     public void UpdateText(int score)

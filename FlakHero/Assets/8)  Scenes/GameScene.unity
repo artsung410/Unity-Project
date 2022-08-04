@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44824904, g: 0.49827605, b: 0.5755831, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824868, g: 0.49827552, b: 0.5755828, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 1540329799}
     - target: {fileID: 9077199710095630384, guid: 200450540193c024190863e7945fab80, type: 3}
       propertyPath: isRandomItemDrop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9077199710095630385, guid: 200450540193c024190863e7945fab80, type: 3}
       propertyPath: m_Name
@@ -4071,7 +4071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9111087765165537485, guid: 809ebb92d03e1e24da0b8b9dfcc65818, type: 3}
       propertyPath: isRandomItemDrop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 809ebb92d03e1e24da0b8b9dfcc65818, type: 3}
@@ -4986,7 +4986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b0da1eb3aa653448e2357cbca2616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnTime: 1.5
+  enemySpawnTime: 1
   enemySpawnLatency: 1
 --- !u!114 &1630040808
 MonoBehaviour:
@@ -5256,7 +5256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19.999756}
+  m_AnchoredPosition: {x: 0, y: -19.999878}
   m_SizeDelta: {x: 0, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2002767441

@@ -75,3 +75,11 @@ Update Mode: resetToDefaultDependencies
 
 The following packages were removed:
   com.unity.2d.sprite@1.0.0
+
+=== Thu Aug  4 09:08:34 2022
+
+Packages were changed.
+Update Mode: resetToDefaultDependencies
+
+The following packages were removed:
+  com.unity.2d.sprite@1.0.0

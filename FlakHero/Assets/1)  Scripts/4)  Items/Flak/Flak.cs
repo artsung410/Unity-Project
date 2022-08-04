@@ -10,10 +10,9 @@ public class Flak : MonoBehaviour
     public GameObject target;
     public Transform BulletSpawnPoint;
     private AudioSource audioSource;
-    public AudioClip audioClipInitFlak;   // 포탑 생성 소리
-    public AudioClip audioClipProjectile; // 포탄 발사 소리
+    public AudioClip audioClipInitFlak;  
+    public AudioClip audioClipProjectile; 
 
-    // 1, 2, 3, 4 분면
     int[] dx = { 10, -10, -10, 10 };
     int[] dz = { 10, 10, -10, -10 };
 
@@ -41,7 +40,6 @@ public class Flak : MonoBehaviour
             {
                 transform.position = new Vector3(dx[randomPos], 1, dz[randomPos]);
 
-                // 생성 되었을 때 이펙트 효과
                 GameObject particle = Instantiate(FlakInitEffect, transform.position, Quaternion.identity);
                 Destroy(particle.gameObject, 1f);
 
