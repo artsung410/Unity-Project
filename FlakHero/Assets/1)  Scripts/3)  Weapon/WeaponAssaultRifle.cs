@@ -165,7 +165,9 @@ public class WeaponAssaultRifle : WeaponBase
         // 총구를 시작지점으로 하여 Raycast 연산
         Vector3 attackDirection = (targetPoint - bulletSpawnPoint.position).normalized;
 
-        if (Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance))
+        int layerMask = 1 << 6; // player layer
+
+        if (Physics.Raycast(bulletSpawnPoint.position, attackDirection, out hit, weaponSetting.attackDistance, layerMask))
         {
             ImpactPool.SpawnImpact(hit);
             Debug.Log(hit.collider.tag);

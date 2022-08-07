@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44824868, g: 0.49827552, b: 0.5755828, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824904, g: 0.49827605, b: 0.5755831, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 1540329799}
     - target: {fileID: 9077199710095630384, guid: 200450540193c024190863e7945fab80, type: 3}
       propertyPath: isRandomItemDrop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9077199710095630385, guid: 200450540193c024190863e7945fab80, type: 3}
       propertyPath: m_Name
@@ -4071,7 +4071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9111087765165537485, guid: 809ebb92d03e1e24da0b8b9dfcc65818, type: 3}
       propertyPath: isRandomItemDrop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 809ebb92d03e1e24da0b8b9dfcc65818, type: 3}
@@ -4482,7 +4482,7 @@ GameObject:
   - component: {fileID: 1424851149}
   - component: {fileID: 1424851148}
   - component: {fileID: 1424851147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: ImpactNormal
   m_Icon: {fileID: 0}
@@ -4986,7 +4986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b0da1eb3aa653448e2357cbca2616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnTime: 1
+  enemySpawnTime: 1.5
   enemySpawnLatency: 1
 --- !u!114 &1630040808
 MonoBehaviour:
@@ -5092,6 +5092,7 @@ GameObject:
   - component: {fileID: 1780030711}
   - component: {fileID: 1780030713}
   - component: {fileID: 1780030712}
+  - component: {fileID: 1780030714}
   m_Layer: 6
   m_Name: Radar
   m_TagString: Untagged
@@ -5142,6 +5143,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 75
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1780030714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780030710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19faaa411e3637f49a6a84114dfbc1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RadarDotPrefab: {fileID: 6247463329231725097, guid: 25aeb1e4db9227047a6a5dbcd5041c89, type: 3}
+  initActivationCount: 10
 --- !u!1 &1836076913
 GameObject:
   m_ObjectHideFlags: 0

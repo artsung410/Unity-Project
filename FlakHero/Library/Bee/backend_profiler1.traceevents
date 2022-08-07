@@ -1,519 +1,519 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1659580371716740, "dur":1089, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580371717838, "dur":46, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1659580371717893, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1659580371717911, "dur":386, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1659580371718315, "dur":458, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580371718773, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439310, "dur":213, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439523, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439539, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439542, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439549, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439550, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439556, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439557, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439562, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439563, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439569, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439570, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439576, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439577, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439582, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439584, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439588, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439589, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439594, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439596, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439601, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439602, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439607, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439608, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439614, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439622, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372439667, "dur":1327, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1659580371718451, "dur":327, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371718779, "dur":3357, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371722146, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659580371722147, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371722209, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659580371722213, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371723016, "dur":1647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659580371724664, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1659580371724706, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371724980, "dur":746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1659580371725758, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1659580371725792, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371725840, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1659580371726760, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1659580371726851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371726856, "dur":967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1659580371727869, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371727916, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371728091, "dur":102829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371830959, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371831003, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371831008, "dur":37755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371868817, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371868872, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371868879, "dur":27760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371896671, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371896708, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371896714, "dur":32123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371928878, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371928915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371928923, "dur":33489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371962450, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371962485, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371962491, "dur":30105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371992637, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580371992677, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580371992681, "dur":124095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580372116810, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580372116846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580372116852, "dur":37493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580372154380, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580372154413, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659580372154419, "dur":171856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659580372326320, "dur":112991, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371718484, "dur":302, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371718786, "dur":3358, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371722146, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1659580371722224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371730983, "dur":40738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1659580371771769, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1659580371771830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371772087, "dur":40230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1659580371812362, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371812416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371812423, "dur":48627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371861090, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371861131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371861139, "dur":46132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371907312, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371907347, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371907355, "dur":36731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371944125, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371944164, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371944171, "dur":37598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371981809, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580371981848, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580371981855, "dur":68024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372049912, "dur":40220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372090138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580372090147, "dur":848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372091028, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372091063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580372091069, "dur":108410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372199515, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372199553, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659580372199560, "dur":109540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659580372309140, "dur":130166, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371718470, "dur":312, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371718782, "dur":3361, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371722147, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1659580371722241, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371737659, "dur":34210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1659580371771917, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371771975, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371772253, "dur":16606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371788892, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371788928, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371788935, "dur":30899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371819877, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371819917, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371819924, "dur":31973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371851952, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371852015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371852023, "dur":42482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371894543, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371894583, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371894590, "dur":40734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371935368, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371935407, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371935414, "dur":31689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371967146, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371967186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371967193, "dur":24846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371992079, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580371992119, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580371992127, "dur":23994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580372016162, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580372016205, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580372016212, "dur":62025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580372078278, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580372078319, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659580372078327, "dur":235411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659580372313781, "dur":125536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371718501, "dur":288, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371718790, "dur":3357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371722149, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1659580371722219, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371726755, "dur":869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1659580371727661, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1659580371727723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371727729, "dur":43902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1659580371771679, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype.exe" }}
-,{ "pid":12345, "tid":4, "ts":1659580371771723, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371771730, "dur":28244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype.exe" }}
-,{ "pid":12345, "tid":4, "ts":1659580371800011, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580371800064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371800072, "dur":28633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580371828743, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580371828779, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371828784, "dur":138329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580371967153, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580371967191, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580371967196, "dur":95187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372062414, "dur":42972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372105392, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580372105403, "dur":2151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372107585, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372107617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580372107622, "dur":128816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372236480, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372236516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659580372236523, "dur":202733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659580372439281, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":4, "ts":1659580372439282, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371718523, "dur":270, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371718794, "dur":3348, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371722148, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1659580371722230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371734341, "dur":37458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1659580371771873, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371771963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371772249, "dur":42925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371815208, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371815242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371815249, "dur":21865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371837153, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371837202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371837209, "dur":76311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371913562, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371913603, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371913611, "dur":25127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371938782, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371938821, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371938829, "dur":30599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371969478, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371969523, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371969528, "dur":27113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371996679, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580371996716, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580371996723, "dur":44614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372041377, "dur":2347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372043729, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372043737, "dur":6124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372049897, "dur":5482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372055385, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372055533, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372056472, "dur":1413, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372057888, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372057913, "dur":2705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372060651, "dur":24753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372085409, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372085440, "dur":1243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372086717, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372086751, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372086757, "dur":57196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372143984, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372144020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372144027, "dur":45197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372189261, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372189293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372189299, "dur":110521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659580372299861, "dur":1465, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1659580372301331, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372301342, "dur":1291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1659580372302669, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1659580372302734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372302741, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1659580372303717, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1659580372303754, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659580372303759, "dur":787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1659580372304574, "dur":134731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371718538, "dur":259, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371718797, "dur":3356, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371722153, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1659580371722239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371737362, "dur":40939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1659580371778344, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371778381, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371778386, "dur":29249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371807670, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371807720, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371807828, "dur":20027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371827896, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371827925, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371827931, "dur":45285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371873251, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371873287, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371873293, "dur":27945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371901293, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371901335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371901342, "dur":48304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371949686, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371949728, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371949755, "dur":27088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371976886, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580371976929, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580371976936, "dur":27061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372004033, "dur":52813, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372056849, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372056857, "dur":3601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372060490, "dur":850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372061343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372061349, "dur":710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372062086, "dur":687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372062776, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372062792, "dur":893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372063714, "dur":729, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372064446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372064452, "dur":696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372065178, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372065213, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372065218, "dur":86257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372151510, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372151545, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372151549, "dur":149882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659580372301469, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1659580372301505, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372301510, "dur":1748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1659580372303300, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1659580372303349, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372303359, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1659580372304322, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1659580372304370, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659580372304374, "dur":914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1659580372305321, "dur":133985, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371718556, "dur":244, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371718800, "dur":3340, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371722146, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":7, "ts":1659580371722224, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371727351, "dur":939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":7, "ts":1659580371728328, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":7, "ts":1659580371728372, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371728376, "dur":63228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":7, "ts":1659580371791646, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371791692, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371791698, "dur":21084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371812821, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371812866, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371812871, "dur":56348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371869249, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371869285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371869308, "dur":28105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371897449, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371897487, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371897493, "dur":60168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371957705, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580371957744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580371957752, "dur":49924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372007710, "dur":109548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372117261, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580372117266, "dur":1058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372118355, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372118392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580372118397, "dur":107981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372226412, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372226448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580372226455, "dur":49298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372275789, "dur":69464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372345259, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659580372345268, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659580372346273, "dur":93048, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371718577, "dur":226, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371718804, "dur":3345, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371722149, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1659580371722230, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371731253, "dur":46720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1659580371778011, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371778069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371778074, "dur":30062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371808166, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371808205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371808209, "dur":22205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371830450, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371830487, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371830494, "dur":27051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371857585, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371857625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371857632, "dur":23163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371880840, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371880884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371880892, "dur":50067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371930999, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580371931648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580371931654, "dur":91923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580372023615, "dur":123996, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580372147616, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580372147625, "dur":3598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580372151268, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580372151309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580372151387, "dur":147583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659580372299010, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1659580372299136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580372299145, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1659580372300045, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1659580372300080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659580372300087, "dur":6994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1659580372307116, "dur":132192, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371718596, "dur":211, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371718807, "dur":3343, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371722152, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":9, "ts":1659580371722220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371726816, "dur":908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":9, "ts":1659580371727758, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371727802, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371728079, "dur":43938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371772052, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371772097, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371772226, "dur":35424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371807687, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371807722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371807727, "dur":22384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371830164, "dur":153271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371983439, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371983446, "dur":6636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371990126, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580371990172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580371990179, "dur":55152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580372045367, "dur":45975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580372091345, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372091351, "dur":815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580372092207, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580372092248, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372092254, "dur":189428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659580372281723, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":9, "ts":1659580372281836, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372282282, "dur":2008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":9, "ts":1659580372284329, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":9, "ts":1659580372284380, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372284429, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":9, "ts":1659580372285497, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":9, "ts":1659580372285531, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372285536, "dur":1098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":9, "ts":1659580372286669, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1659580372286713, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659580372286719, "dur":44435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1659580372331200, "dur":108112, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371718620, "dur":190, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371718810, "dur":3341, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371722151, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1659580371722235, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371734460, "dur":43431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1659580371777936, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371777979, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371778068, "dur":29541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371807646, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371807689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371807722, "dur":25890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371833648, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371833685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371833692, "dur":57333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371891068, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371891105, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371891112, "dur":39842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371930994, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371931095, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371931102, "dur":38130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371969433, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371969486, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371969493, "dur":23065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371992591, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580371992628, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580371992634, "dur":57670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372050334, "dur":777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372051114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372051121, "dur":676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372051827, "dur":58884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372110715, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372110723, "dur":3144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372113900, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372113936, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372113940, "dur":75360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372189342, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372189378, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372189383, "dur":104470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659580372293894, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":10, "ts":1659580372293932, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372293940, "dur":10602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":10, "ts":1659580372304573, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/boot.config" }}
-,{ "pid":12345, "tid":10, "ts":1659580372304679, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659580372304683, "dur":737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/boot.config" }}
-,{ "pid":12345, "tid":10, "ts":1659580372305451, "dur":133864, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371718631, "dur":182, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371718813, "dur":3332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371722147, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1659580371722256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371738035, "dur":33907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1659580371771984, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371772028, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371772270, "dur":22296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371794609, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371794674, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371794681, "dur":72642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371867357, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371867392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371867398, "dur":33972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371901407, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371901446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371901451, "dur":52170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371953656, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580371953691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580371953698, "dur":57700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372011433, "dur":95188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372106625, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580372106632, "dur":6234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372112904, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372112940, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580372112945, "dur":74867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372187848, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372187890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580372187898, "dur":36678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372224620, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372224684, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659580372224693, "dur":96980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659580372321708, "dur":117602, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371718649, "dur":167, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371718816, "dur":3330, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371722147, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1659580371722210, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371723341, "dur":1269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1659580371724637, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1659580371724663, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371725084, "dur":683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1659580371725790, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1659580371725820, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371725856, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1659580371726727, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1659580371726766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371726772, "dur":1112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1659580371727929, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371727980, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371727985, "dur":138549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371866579, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371866622, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371866629, "dur":34606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371901320, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371901358, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371901362, "dur":29559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371930965, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371931006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371931012, "dur":31012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371962060, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371962097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371962104, "dur":31443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371993580, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580371993629, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580371993635, "dur":39839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580372033515, "dur":207010, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580372240530, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580372240540, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580372241625, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580372241661, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659580372241667, "dur":153479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/KGA_11/Desktop/flakHero/FPSPrototype_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659580372395177, "dur":44130, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659580372442198, "dur":1917, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1659863599329851, "dur":763, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863599330618, "dur":48, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1659863599330676, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1659863599330695, "dur":620, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1659863599331332, "dur":426, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863599331758, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085053, "dur":197, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085250, "dur":350, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085600, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085602, "dur":327, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085929, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600085931, "dur":326, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086257, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086258, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086583, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086584, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086909, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600086910, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087235, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087236, "dur":326, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087562, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087563, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087888, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600087889, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088214, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088215, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088540, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088541, "dur":326, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088867, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600088869, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600089194, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600089205, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600089207, "dur":988, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1659863599331165, "dur":599, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599331766, "dur":2402, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599334174, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659863599334176, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599334197, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659863599334202, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599334705, "dur":1904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659863599336611, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1659863599336654, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599337050, "dur":724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1659863599337803, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599337831, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599338009, "dur":1457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599339497, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599339535, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599339539, "dur":49967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599389546, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599389573, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599389582, "dur":28382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599417980, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599417999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599418006, "dur":42491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599460515, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599460533, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599460541, "dur":32120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599492676, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599492695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599492701, "dur":60778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599553495, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599553529, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599553535, "dur":50157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599603709, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599603726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599603733, "dur":42923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599646675, "dur":717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599647396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599647405, "dur":840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599648260, "dur":47489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599695756, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599695768, "dur":891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599696675, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599696691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599696699, "dur":53476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599750194, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599750212, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659863599750219, "dur":196429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659863599946666, "dur":138389, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599331312, "dur":463, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599331775, "dur":2396, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599334175, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1659863599334263, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599340315, "dur":973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1659863599341325, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1659863599341364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599341553, "dur":4837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1659863599346428, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599346451, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599346463, "dur":80408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599426896, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599426969, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599426977, "dur":96097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599523110, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599523131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599523139, "dur":36593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599559754, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599559777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599559785, "dur":22330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599582132, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599582155, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599582162, "dur":21021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599603205, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599603226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599603235, "dur":23413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599626668, "dur":86257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599712931, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599712942, "dur":1160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599714118, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599714134, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599714141, "dur":85886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599800072, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599800118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659863599800125, "dur":139636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659863599939781, "dur":145271, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599331220, "dur":548, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599331768, "dur":2453, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599334221, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1659863599334281, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599340488, "dur":5627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1659863599346172, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599346202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599346210, "dur":49435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599395661, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599395678, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599395684, "dur":21518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599417221, "dur":124292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599541518, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599541528, "dur":1418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599542968, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599543005, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599543013, "dur":37765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599580799, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599580838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599580848, "dur":21173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599602045, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599602066, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599602094, "dur":32933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599635068, "dur":68646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599703720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599703729, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599704676, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599704694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599704701, "dur":94400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599799120, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599799139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659863599799147, "dur":151324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659863599950492, "dur":134562, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599331304, "dur":468, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599331772, "dur":2402, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599334175, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1659863599334252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599335557, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1659863599336764, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1659863599336799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599337003, "dur":5270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1659863599342313, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599342340, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599342820, "dur":28064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599370902, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599370924, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599370932, "dur":29426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599400383, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599400403, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599400410, "dur":53588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599454016, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599454035, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599454043, "dur":47829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599501890, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599501907, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599501916, "dur":26326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599528262, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599528284, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599528311, "dur":41451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599569781, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599569798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599569805, "dur":33621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599603444, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599603538, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599603544, "dur":57221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599660784, "dur":63883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599724674, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599724704, "dur":898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599725617, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599725639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599725646, "dur":37001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599762667, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599762683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659863599762690, "dur":219122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659863599981828, "dur":103223, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599331334, "dur":474, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599331808, "dur":2365, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599334175, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1659863599334252, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599339740, "dur":940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1659863599340717, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1659863599340761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599340765, "dur":2246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1659863599343091, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599343118, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599343124, "dur":49328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599392470, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599392496, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599392503, "dur":64145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599456668, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599456689, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599456697, "dur":35944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599492662, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599492683, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599492691, "dur":22318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599515031, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599515067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599515076, "dur":38314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599553405, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599553424, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599553436, "dur":29609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599583063, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599583086, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599583093, "dur":20338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599603446, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599603464, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599603471, "dur":127588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599731095, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599731113, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599731122, "dur":94562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599825703, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599825721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659863599825729, "dur":134525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659863599960271, "dur":124784, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599331527, "dur":305, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599331832, "dur":2369, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599334201, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1659863599334256, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599335449, "dur":1224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1659863599336707, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1659863599336743, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599336886, "dur":5135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1659863599342060, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599342085, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599342448, "dur":75083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599417548, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599417565, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599417572, "dur":41324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599458916, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599458940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599458975, "dur":94463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599553454, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599553476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599553483, "dur":28137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599581726, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599581753, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599581760, "dur":162688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599744465, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599744483, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599744490, "dur":31966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599776478, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599776499, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659863599776506, "dur":176591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659863599953114, "dur":131935, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599331551, "dur":285, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599331836, "dur":2336, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599334175, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1659863599334232, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599335593, "dur":1057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1659863599336691, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1659863599336727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599336868, "dur":5340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1659863599342245, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599342289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599342732, "dur":26143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599368896, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599368921, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599368929, "dur":31490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599400436, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599400458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599400464, "dur":49190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599449677, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599449704, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599449713, "dur":21028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599470763, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599470783, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599470791, "dur":22800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599493609, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599493633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599493640, "dur":29827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599523487, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599523504, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599523511, "dur":40826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599564364, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599564384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599564392, "dur":91286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599655695, "dur":662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599656361, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599656371, "dur":7621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599664010, "dur":23954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599687992, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599688003, "dur":983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599689003, "dur":820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599689828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599689837, "dur":1403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599691260, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599691280, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599691288, "dur":226392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659863599917703, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599917729, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599917737, "dur":13825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599931582, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1659863599931600, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599931607, "dur":1955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1659863599933586, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599933606, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599933613, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599934855, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1659863599934873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599934880, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1659863599935826, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1659863599935842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599935848, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1659863599936721, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599936741, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599936748, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659863599937727, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1659863599937744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659863599937751, "dur":870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1659863599938636, "dur":146429, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599331445, "dur":374, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599331820, "dur":2355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599334175, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1659863599334221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599335561, "dur":1146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1659863599336736, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1659863599336788, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599336906, "dur":9518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1659863599346495, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599346521, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599346526, "dur":175721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599522271, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599522291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599522299, "dur":78004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599600322, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599600340, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599600349, "dur":51004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599651371, "dur":1996, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599653373, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599653382, "dur":875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599654274, "dur":52079, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599706378, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599706387, "dur":791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599707196, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599707214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599707221, "dur":164158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599871399, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863599871416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659863599871424, "dur":156497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659863600027934, "dur":57119, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599331469, "dur":353, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599331823, "dur":2398, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599334221, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1659863599334281, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599340271, "dur":2309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1659863599342615, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599342640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599342856, "dur":40730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599383612, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599383634, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599383643, "dur":57343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599441012, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599441033, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599441042, "dur":186881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599627941, "dur":86856, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599714801, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599714808, "dur":1177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599716001, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599716019, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599716026, "dur":81961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599798006, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599798024, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599798031, "dur":130794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659863599928846, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1659863599928931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599928939, "dur":876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1659863599929835, "dur":9595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1659863599939434, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659863599939442, "dur":851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1659863599940309, "dur":144741, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599331483, "dur":342, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599331825, "dur":2349, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599334174, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1659863599334252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599340666, "dur":5521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1659863599346224, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599346243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599346251, "dur":54391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599400658, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599400690, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599400696, "dur":123136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599523849, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599523870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599523875, "dur":29291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599553188, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599553206, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599553215, "dur":90429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599643663, "dur":237671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599881339, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599881349, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659863599882463, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":10, "ts":1659863599882539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599882979, "dur":679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":10, "ts":1659863599883674, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1659863599883691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599883745, "dur":836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1659863599884599, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":10, "ts":1659863599884617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599884625, "dur":1076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":10, "ts":1659863599885717, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1659863599885751, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599885757, "dur":52106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1659863599937880, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1659863599937961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659863599937967, "dur":927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1659863599938907, "dur":146174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599331508, "dur":320, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599331828, "dur":2345, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599334175, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1659863599334234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599335558, "dur":1216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1659863599336806, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":11, "ts":1659863599336841, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599336846, "dur":724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":11, "ts":1659863599337603, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1659863599337639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599337644, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1659863599339384, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599339422, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599339469, "dur":6835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599346331, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599346356, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599346361, "dur":42221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599388606, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599388631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599388639, "dur":55373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599444031, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599444052, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599444060, "dur":89317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599533396, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599533414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599533422, "dur":35448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599568890, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599568909, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599568917, "dur":25715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599594652, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599594677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599594686, "dur":23057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599617761, "dur":39540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599657304, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599657311, "dur":4240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599661572, "dur":718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599662294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599662302, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599663180, "dur":675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599663859, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599663866, "dur":832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599664716, "dur":1502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599666222, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599666231, "dur":1048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599667297, "dur":40202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599707503, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599707511, "dur":863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599708393, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599708411, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599708418, "dur":142142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599850580, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863599850598, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659863599850606, "dur":234412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659863600085032, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":11, "ts":1659863600085034, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599331425, "dur":391, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599331816, "dur":2384, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599334201, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1659863599334258, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599339920, "dur":851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1659863599340809, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype.exe" }}
+,{ "pid":12345, "tid":12, "ts":1659863599340831, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599340835, "dur":54403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype.exe" }}
+,{ "pid":12345, "tid":12, "ts":1659863599395258, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599395280, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599395288, "dur":98092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599493398, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599493420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599493427, "dur":29886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599523330, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599523354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599523360, "dur":52423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599575804, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599575825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599575833, "dur":30142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599605996, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599606019, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599606028, "dur":28954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599635002, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599635022, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599635032, "dur":55315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599690366, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599690381, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599690386, "dur":103475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599793881, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599793899, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599793908, "dur":43420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599837347, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599837365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599837373, "dur":39330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599876724, "dur":83207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599959937, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659863599959945, "dur":760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users//Desktop/flakHero[]/FPSPrototype_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659863599960716, "dur":124366, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659863600094127, "dur":1742, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

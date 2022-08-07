@@ -27,11 +27,9 @@ public class Rader : MonoBehaviour
     {
         if (other.tag == "EnemyA" || other.tag == "EnemyB")
         {
-            EnemyDot = Instantiate(EnemyDotPrefab, GameObject.Find("Canvas").transform);
-
-            EnemyDot.transform.position = CalculateDirection(other);
-
-            Destroy(EnemyDot, 0.02f);
+            RadarDot EnemyDot = RadarDotPool.GetObject();
+            EnemyDot.gameObject.transform.position = CalculateDirection(other);
+            StartCoroutine(DeActivationDot(EnemyDot));
         }
     }
 
@@ -59,5 +57,11 @@ public class Rader : MonoBehaviour
         Vector3 EnemyDirectionOnRader = CanvasVec + NewDeltaVec;
 
         return EnemyDirectionOnRader;
+    }
+
+    IEnumerator DeActivationDot(RadarDot Dot)
+    {
+        yield return new WaitForSeconds(0.02f);
+        RadarDotPool.ReturnObject(Dot);
     }
 }

@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3866366392268004597}
   - component: {fileID: 7120105009324281868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PUBG_BOX
   m_TagString: DropBox
   m_Icon: {fileID: 0}

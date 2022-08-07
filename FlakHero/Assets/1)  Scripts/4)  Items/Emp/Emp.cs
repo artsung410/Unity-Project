@@ -5,9 +5,9 @@ using UnityEngine;
 public class Emp : MonoBehaviour
 {
     public int Damage;
-    private void Awake()
+    private void Start()
     {
-        Invoke("DeactivateObect", 2f);
+        StartCoroutine("DeactivateObect");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,8 +37,9 @@ public class Emp : MonoBehaviour
         }
     }
 
-    void DeactivateObect()
+    IEnumerator DeactivateObect()
     {
+        yield return new WaitForSeconds(2f);
         EmpPool.ReturnObject(this);
     }
 

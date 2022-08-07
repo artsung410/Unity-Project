@@ -1123,7 +1123,7 @@ GameObject:
   - component: {fileID: 9077199710095630387}
   - component: {fileID: 9077199710095630384}
   - component: {fileID: 5100002424925756545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MissileAircraft
   m_TagString: EnemyB
   m_Icon: {fileID: 0}
@@ -1203,9 +1203,7 @@ MonoBehaviour:
   explosionRadius: 10
   explosionForce: 1000
   isRandomItemDrop: 0
-  enemyExplosionPrefab: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
   target: {fileID: 0}
-  MissilePrefab: {fileID: 0}
   MissileSpawnPoint: {fileID: 859870697964432277}
   maxHP: 100
   currentHP: 0
