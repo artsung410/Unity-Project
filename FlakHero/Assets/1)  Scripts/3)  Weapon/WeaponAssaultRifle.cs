@@ -94,7 +94,7 @@ public class WeaponAssaultRifle : WeaponBase
 
     public void OnAttack()
     {
-        if (IsOnOverHeat == false)
+        if (IsOnOverHeat == false && animator.MoveSpeed <= 0.5f)
         {
             HeatWeapon();
         }
