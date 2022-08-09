@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonBehaviour<GameManager>
 {
+    public Status status;
+
     [HideInInspector]
     public bool IsGameOver;
 
@@ -33,7 +35,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     // 『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『
 
     private bool isEnd = false;
-    private int currentScore = 0;
+    public int currentScore;
     public int ScoreIncreaseAmount = 50;
 
     // 斗型 淫恵 
@@ -49,10 +51,28 @@ public class GameManager : SingletonBehaviour<GameManager>
         {
             return currentScore;
         }
+
         set
         {
             currentScore = value;
             OnScoreChange.Invoke(currentScore);
+        }
+    }
+
+    private void Start()
+    {
+        GameData gameData = DataMgr.Instance.gameDatas;
+
+        if (DataMgr.Instance.onLoad == false)
+        {
+            currentScore = 0;
+        }
+
+        else
+        {
+            CurrentScore = gameData.score;
+            status.currentHP = gameData.hp;
+            status.onHPEvent.Invoke(status.currentHP, status.currentHP);
         }
     }
 
@@ -62,8 +82,11 @@ public class GameManager : SingletonBehaviour<GameManager>
         {
             Reset();
             flakCount = 0;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
+
+
+
     }
 
     public void AddScore()

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Input KeyCodes")]
     public      KeyCode                     KeyCodeRun = KeyCode.LeftShift;     // 달리기 키
     public      KeyCode                     KeyCodeJump = KeyCode.Space;        // 점프 키
+    public      KeyCode                     KeyCodeESC = KeyCode.Escape;        // 세팅화면 넘어가는 키
     //public      KeyCode                     keyCodeReload = KeyCode.R;        // 탄 재장전 키
 
     [Header("Audio Clips")]
@@ -17,11 +18,15 @@ public class PlayerController : MonoBehaviour
     private     PlayerMovement              movement;                           // 키보드 입력으로 플레이어 이동, 점프
     private     Status                      status;                             // 이동속도 등의 플레이어 정보
     private     AudioSource                 audioSource;                        // 사운드 재생 제어
-    public     WeaponBase                  Weapon;                             // 모든 무기가 상속받는 기반 클래스
+    public      WeaponBase                  Weapon;                             // 모든 무기가 상속받는 기반 클래스
+    public      PlayerHUD                   playerHud;
 
+    private     bool                        isOnSettingUI;
     void Awake()
     {
         // 마우스 커서를 보이지 않게 설정하고, 현재 위치에 고정시킨다.
+        isOnSettingUI = false;
+
         Cursor.visible      = false;
         Cursor.lockState    = CursorLockMode.Locked;
 
@@ -33,10 +38,38 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateRotate();
-        UpdateMove();
-        UpdateJump();
-        UpdateWeaponAction();
+        if (isOnSettingUI == false)
+        {
+            UpdateRotate();
+            UpdateMove();
+            UpdateJump();
+            UpdateWeaponAction();
+        }
+
+        UpdateScreen();
+    }
+
+    void UpdateScreen()
+    {
+        if (Input.GetKeyDown(KeyCodeESC))
+        {
+            isOnSettingUI = !isOnSettingUI;
+        }
+
+        if (isOnSettingUI)
+        {
+            playerHud.SettingUI.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            playerHud.SettingUI.SetActive(false);
+            Time.timeScale = 1;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     void UpdateRotate()

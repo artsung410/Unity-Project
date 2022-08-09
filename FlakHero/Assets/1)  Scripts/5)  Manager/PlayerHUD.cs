@@ -17,7 +17,7 @@ public class PlayerHUD : MonoBehaviour
     public Image imageWeaponIcon;    
     public Image[] WeaponIcons;  
     [SerializeField]
-    private Vector2[] sizeWeaponIcons;   
+    private Vector2[] sizeWeaponIcons;
 
     [Header("HP & BloodScreen UI")]
     [SerializeField]
@@ -31,16 +31,21 @@ public class PlayerHUD : MonoBehaviour
     private Image hpBar;
 
     // overHeat°ü·Ã
+    [Header("OverHeat UI")]
     [SerializeField]
     private Image overheatBar;
 
     [SerializeField]
     private GameObject exceptionMark;
 
+    [Header("Setting UI")]
+    public GameObject SettingUI;
+
     Animator weaponAnimator;
 
     private void Awake()
     {
+        SettingUI.SetActive(false);
         status.onHPEvent.AddListener(UpdateHPHUD);
         weapon.onOverHeatEvent.AddListener(UpdateOverHeatHUD);
         weaponAnimator = WeaponIcons[0].GetComponent<Animator>();
