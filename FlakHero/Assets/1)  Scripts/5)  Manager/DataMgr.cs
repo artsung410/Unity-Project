@@ -9,12 +9,14 @@ public class GameData
 {
     public int BGM_Volume = 0;
     public int Effect_Volume = 0;
+    public int highScore = 0;
     public int score = 0;
     public int hp = 0;
     public List<EnemyData> EnemyOfWorldDatas;
 
-    public GameData(int _score, int _hp)
+    public GameData(int _highScore, int _score, int _hp)
     {
+        highScore = _highScore;
         score = _score;
         hp = _hp;
         EnemyOfWorldDatas = new List<EnemyData>();
@@ -65,46 +67,28 @@ public class DataMgr : MonoBehaviour
                 container.name = "DataMgr";
                 instance = container.AddComponent(typeof(DataMgr)) as DataMgr;
 
-                //instance.SetMonsterDataFromCSV();
-
                 DontDestroyOnLoad(container);
             }
-
-            Debug.Log("인스턴스 생성");
-
             return instance;
         }
     }
 
     public GameData gameDatas;
-    //public GameData GameData
-    //{
-    //    get
-    //    {
-    //        if (gameDatas == null)
-    //        {
-    //            LoadGameData();
-    //            SaveGameData();
 
-    //        }
-    //        return gameDatas;
-    //    }
-    //}
-
-    void InitGameData()
+    public void InitGameData()
     {
-        gameDatas = new GameData(0, 0);
+        gameDatas = new GameData(0, 0, 100);
     }
 
     public void SaveGameData()
     {
         InitGameData();
+
+        LoadGameData();
+
+        gameDatas.highScore = gameDatas.highScore < GameManager.Instance.CurrentScore ? GameManager.Instance.CurrentScore : gameDatas.highScore;
         gameDatas.score = GameManager.Instance.CurrentScore;
         gameDatas.hp = GameManager.Instance.status.CurrentHP;
-        //gameDatas.EnemyOfWorldDatas.Add(new EnemyData(1, "MissileAircraft1", 0, 0, 0, 0, "1,MissileAircraft1,10,20,30,10"));
-        //gameDatas.EnemyOfWorldDatas.Add(new EnemyData(2, "KamikazeAircraft1", 0, 0, 30, 5f, "1,KamikazeAircraft1,20,20,30,5"));
-        //gameDatas.EnemyOfWorldDatas.Add(new EnemyData(3, "KamikazeAircraft2", 40, 50, 50, 5f, "3,KamikazeAircraft2,40,50,50,5"));
-
 
         string toJsonData = JsonUtility.ToJson(gameDatas, true);
         // 모바일 : Application.persistentDataPath, 에디터 : DataPath
@@ -135,6 +119,8 @@ public class DataMgr : MonoBehaviour
             InitGameData();
         }
     }
+
+
 
     public void ExitGame()
     {
